@@ -1,0 +1,67 @@
+<div class="studio-wrapper">
+  <!-- Top Navigation bar -->
+  <nav class="studio-nav">
+    <div class="nav-logo">{{ studioName }}</div>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#about">About Studio</a>
+      <a href="mailto:contact@yourdomain.com" class="cta-btn-sm">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <!-- Logo Container: Replace asset src path with your uploaded image -->
+      <div class="logo-container">
+        <img src="assets/slapcraft-logo.png" alt="Slapcraft Games Logo" class="pixel-logo">
+      </div>
+      <h1>{{ studioName }}</h1>
+      <p class="tagline">{{ studioTagline }}</p>
+      <div class="hero-actions">
+        <a href="#projects" class="cta-btn-primary">View Our Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Active Projects Section -->
+  <section id="projects" class="content-section">
+    <div class="section-header">
+      <h2>Forge Log: Active Projects</h2>
+      <div class="header-divider"></div>
+    </div>
+
+    <div class="game-card">
+      <div class="card-badge">{{ activeProject.status }}</div>
+      <h3>{{ activeProject.title }}</h3>
+      <span class="engine-tag">{{ activeProject.engine }}</span>
+      <p class="game-desc">{{ activeProject.description }}</p>
+
+      <div class="features-list">
+        <h4>Core Mechanics Implemented:</h4>
+        <ul>
+          <li *ngFor="let feature of activeProject.features">
+            <span class="bullet-spark">✦</span> {{ feature }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section for Startup Program Reviewers -->
+  <section id="about" class="content-section alternate-bg">
+    <div class="section-header">
+      <h2>About the Studio</h2>
+      <div class="header-divider"></div>
+    </div>
+    <div class="about-text">
+      <p>Founded in {{ currentYear }}, Slapcraft Games is an independent game development studio dedicated to exploring mechanical complexity within classic 2D framework environments. Utilizing modular frameworks like Love2D alongside advanced workspace logic automation pipelines, we build games prioritizing tactile, kinetic feedback loops and pristine pixel art styling.</p>
+    </div>
+  </section>
+
+  <!-- Professional Corporate Footer -->
+  <footer class="studio-footer">
+    <p>&copy; {{ currentYear }} {{ studioName }}. All Intellectual Property and Game Assets Reserved.</p>
+    <p class="footer-sub">Contact: <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a></p>
+  </footer>
+</div>
