@@ -6,10 +6,12 @@ $gold-dark: #8A5200;
 $magenta-spark: #FF0066;
 $text-light: #FFFDF2;
 $text-muted: #bdaec4;
-
+.title {
+  font-family: 'PressStart2P-Regular', sans-serif; // Just reference the name here
+}
 // Contemporary 16-Bit Pixel Font Configuration
-$font-pixel: 'Pixelify Sans', sans-serif;
-$font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-pixel: 'PressStart2P-Regular', sans-serif;
+$font-body: 'PressStart2P-Regular', sans-serif;
 
 .studio-wrapper {
   background-color: $bg-dark;
@@ -111,7 +113,11 @@ $font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section-header {
-  margin-bottom: 3rem;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 3rem;
+  text-align: center;
+
   h2 {
     font-family: $font-pixel;
     font-weight: 700;
@@ -122,7 +128,7 @@ $font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .header-divider {
     height: 4px;
-    width: 70px;
+    width: 100%;
     background-color: $magenta-spark;
   }
 }
@@ -254,6 +260,31 @@ $font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
+.contact-highlight {
+  display: inline-block;
+  border-radius: 4px;
+  animation: contact-pulse 0.7s ease-in-out 4;
+}
+
+@keyframes contact-pulse {
+  0%, 100% {
+    color: $gold-primary;
+    background-color: transparent;
+    text-shadow: none;
+    box-shadow: 0 0 0 transparent;
+  }
+
+  50% {
+    color: white;
+    background-color: rgba($magenta-spark, 0.25);
+    text-shadow:
+      0 0 5px white,
+      0 0 12px $magenta-spark,
+      0 0 22px $magenta-spark;
+    box-shadow: 0 0 18px rgba($magenta-spark, 0.75);
+  }
+}
+
 @media (max-width: 768px) {
   .studio-nav {
     flex-direction: column;
@@ -265,3 +296,4 @@ $font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   .hero-section h1 { font-size: 2.8rem; }
   .game-card .card-badge { position: relative; top: 0; right: 0; display: inline-block; margin-bottom: 1rem; }
 }
+

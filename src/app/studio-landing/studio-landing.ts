@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface GameProject {
@@ -18,19 +18,36 @@ interface GameProject {
 })
 export class StudioLandingComponent {
   studioName = 'Slapcraft Games';
+  studioEmail = 'SlapcraftGames@gmail.com';
   studioTagline = 'Forging High-Impact 2D Pixel Experiences';
   currentYear = new Date().getFullYear();
+  contactHighlighted = signal(false);
+
+  highlightContact(): void {
+    const contact = document.getElementById('contact-email');
+
+    contact?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    this.contactHighlighted.set(false);
+
+    window.setTimeout(() => {
+      this.contactHighlighted.set(true);
+    });
+
+    window.setTimeout(() => {
+      this.contactHighlighted.set(false);
+    }, 3000);
+  }
 
   activeProject: GameProject = {
-    title: 'Project: Domino Smash (Working Title)',
-    engine: 'Built with LÖVE (Love2D) & Lua',
-    status: 'In Active Production — Targeting Steam',
+    title: 'Project: Domino Delirium',
+    engine: 'In development with LÖVE (Love2D) and Lua',
+    status: 'In Development — Planned for Steam',
     description:
-      'An action-packed puzzle tactical game where kinetic chain reactions meet heavy combat mechanics. Destroy obstacles, forge physics-based combos, and crush adversaries utilizing precise pixel-perfect grid collisions.',
+      'A roguelike-inspired domino game in development, where scoring abilities, perks, and changing house rules shape each match. Build your strategy, grow stronger, and outplay your rival.',
     features: [
-      'Handcrafted retro pixel aesthetics tailored for desktop rendering',
-      'Advanced 2D physics framework written completely from scratch in Lua',
-      'Intricate chain-reaction logic system giving players total tactical control',
+      'A retro pixel-art presentation designed for desktop play',
+      'Replayable matches shaped by changing rules and upgrades',
+      'Unlockable perks designed to expand strategic options',
     ],
   };
 }
