@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "untitled1": {
+    "slapcraftgames": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -60,16 +60,19 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "untitled1:build:production"
+              "buildTarget": "slapcraftgames:build:production"
             },
             "development": {
-              "buildTarget": "untitled1:build:development"
+              "buildTarget": "slapcraftgames:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -1,4 +1,4 @@
-# Untitled1
+# slapcraftgames
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.6.
 
@@ -53,6 +53,14 @@ ng e2e
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Deploy
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng deploy --base-href="https://slapcraftgames.com" --cname="slapcraftgames.com"
+```
 
 ## Additional Resources
 

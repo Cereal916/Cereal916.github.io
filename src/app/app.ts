@@ -9,5 +9,5 @@ import { StudioLandingComponent } from './studio-landing/studio-landing';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('untitled1');
+  protected readonly title = signal('slapcraftgames');
 }
