@@ -18,7 +18,7 @@ interface GameProject {
 })
 export class StudioLandingComponent {
   studioName = 'Slapcraft Games';
-  studioEmail = 'SlapcraftGames@gmail.com';
+  studioEmail = 'contact@slapcraftgames.com';
   studioTagline = 'Forging High-Impact 2D Pixel Experiences';
   currentYear = new Date().getFullYear();
   contactHighlighted = signal(false);
