@@ -39,7 +39,7 @@ export class StudioLandingComponent {
   }
 
   activeProject: GameProject = {
-    title: 'Project: Domino Delirium',
+    title: 'House of Pips: a Domino Roguelike',
     engine: 'In development with LÖVE (Love2D) and Lua',
     status: 'In Development — Planned for Steam',
     description:
