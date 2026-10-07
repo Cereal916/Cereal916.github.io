@@ -62,6 +62,15 @@ For end-to-end (e2e) testing, run:
 ng deploy --base-href="https://slapcraftgames.com" --cname="slapcraftgames.com"
 ```
 
+## House of Pips
+
+- `/hop` is the House of Pips page (demo link, YouTube playlist, screenshots).
+- `/hop/wiki` is the player wiki, a lazy-loaded route under `src/app/hop-wiki/`.
+- The wiki's sources (Markdown notes, catalogue snapshot and builder) are in `hop-wiki/`; see
+  `hop-wiki/README.md`. Rebuild `public/hop/wiki-data/` with `npm run wiki` and never edit the
+  generated pages by hand. Wiki changes waiting for the next game release are listed in
+  `hop-wiki/CHANGELOG.md`.
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

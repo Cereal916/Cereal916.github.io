@@ -1,0 +1,442 @@
+// Styles for the generated page bodies. Global (ViewEncapsulation.None) and
+// scoped by .hop-wiki; the custom properties come from the layout.
+
+.wiki-page.with-toc {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 32px;
+}
+
+.wiki-toc {
+  position: sticky;
+  top: 92px;
+  align-self: start;
+  font-size: 11px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: 3px 8px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--gold);
+  }
+}
+
+// The game's typeface sets every glyph and space one em wide, so prose gets a
+// softer colour, tighter word spacing, taller lines and clear gaps between
+// paragraphs, list items and sections.
+.hop-wiki-content {
+  min-width: 0;
+  color: var(--prose);
+  line-height: 2.1;
+  word-spacing: -0.3em;
+
+  h1 {
+    color: var(--gold);
+    font-size: clamp(18px, 3vw, 28px);
+    line-height: 1.4;
+    margin: 0.2em 0 0.8em;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: clamp(13px, 2vw, 17px);
+    line-height: 1.5;
+    margin: 2.4em 0 1em;
+    padding-top: 1.3em;
+    border-top: 2px dashed var(--line);
+  }
+  .entry-head h2,
+  .branch h2 {
+    padding-top: 0;
+    border-top: 0;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 2em 0 0.8em;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    word-spacing: normal;
+  }
+  h4 {
+    color: var(--text);
+    margin: 1.4em 0 0.4em;
+  }
+  [id] {
+    scroll-margin-top: 96px;
+  }
+  p,
+  ul,
+  ol {
+    margin: 0 0 1.4em;
+  }
+  p,
+  ul:not([class]),
+  ol:not([class]),
+  ul.terms {
+    max-width: 70ch;
+  }
+  ul,
+  ol {
+    padding-left: 1.6em;
+  }
+  ul {
+    list-style: square;
+  }
+  li {
+    margin: 0 0 0.8em;
+    padding-left: 0.4em;
+  }
+  li::marker {
+    color: var(--gold);
+  }
+  li > ul,
+  li > ol {
+    margin: 0.8em 0 0;
+  }
+  strong {
+    color: var(--strong);
+    font-weight: 400;
+  }
+  hr {
+    border: 0;
+    border-top: 2px dashed var(--line);
+    margin: 2em 0;
+  }
+  code {
+    background: var(--card-2);
+    padding: 1px 6px;
+    font-size: 0.92em;
+  }
+  .muted {
+    color: var(--muted);
+  }
+  .anchor {
+    color: var(--line);
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: 0.3em;
+    visibility: hidden;
+  }
+  h2:hover .anchor,
+  h3:hover .anchor {
+    visibility: visible;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .entry-icon,
+  .ref-icon,
+  .mini-icon,
+  .perk-tile img,
+  .branch-icon,
+  .entry-card img {
+    image-rendering: pixelated;
+  }
+
+  .rarity-common {
+    --accent: var(--common);
+  }
+  .rarity-uncommon {
+    --accent: var(--uncommon);
+  }
+  .rarity-rare {
+    --accent: var(--rare);
+  }
+  .rarity-epic {
+    --accent: var(--epic);
+  }
+  .rarity-legendary {
+    --accent: var(--legendary);
+  }
+  .rarity-malus {
+    --accent: var(--malus);
+  }
+  .pill {
+    display: inline-block;
+    padding: 0 9px;
+    border: 2px solid var(--accent, var(--line));
+    color: var(--accent, var(--text));
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .legend .pill {
+    margin: 0 4px 6px 0;
+  }
+  a.ref {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--accent, var(--gold));
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+  }
+  a.ref:hover {
+    color: var(--text);
+  }
+  a.ref-skill {
+    color: var(--blue);
+  }
+  img.ref-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 18px;
+    padding: 12px;
+    background: var(--card);
+    border: 2px solid var(--line);
+  }
+  .filter-label {
+    color: var(--muted);
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  .chip {
+    border: 2px solid var(--accent, var(--line));
+    background: transparent;
+    color: var(--accent, var(--text));
+    padding: 6px 10px;
+    font: 8px var(--pixel);
+    cursor: pointer;
+  }
+  .chip:hover {
+    background: var(--card-2);
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--accent, var(--gold));
+    color: var(--bg);
+    border-color: var(--accent, var(--gold));
+  }
+  .filters select,
+  .filters input {
+    background: var(--bg);
+    color: var(--text);
+    border: 2px solid var(--line);
+    padding: 6px 10px;
+    font: inherit;
+    font-size: 11px;
+  }
+  .filters input {
+    flex: 1;
+    min-width: 160px;
+  }
+  .perk-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 12px;
+  }
+  .perk-tile {
+    margin: 0;
+  }
+  .perk-tile a {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 12px;
+    height: 100%;
+    padding: 12px;
+    border: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    transition:
+      transform 0.12s,
+      border-color 0.12s;
+  }
+  .perk-tile a:hover,
+  .perk-tile a:focus-visible {
+    border-color: var(--accent);
+    background: var(--card-2);
+    transform: translateY(-2px);
+  }
+  .perk-tile img {
+    grid-row: 1 / 4;
+    width: 64px;
+    height: 64px;
+  }
+  .tile-name {
+    color: var(--accent);
+    font: 10px/1.6 var(--pixel);
+  }
+  .tile-kind {
+    color: var(--muted);
+    font-size: 10px;
+  }
+  .tile-text {
+    font-size: 11px;
+    line-height: 1.4;
+    margin-top: 4px;
+  }
+  .perk-group h2 {
+    color: var(--accent);
+  }
+
+  .crumbs {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 0 0 8px;
+  }
+  .entry {
+    margin: 0 0 2.4em;
+  }
+  .entry + .entry {
+    border-top: 2px dashed var(--line);
+    padding-top: 1.6em;
+  }
+  .entry-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+  .entry-head h1,
+  .entry-head h2,
+  .entry-head h3 {
+    margin: 0;
+    color: var(--accent, var(--gold));
+  }
+  .entry.skill .entry-head h3 {
+    color: var(--text);
+  }
+  .entry-sub {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 11px;
+  }
+  .entry-icon {
+    flex: none;
+  }
+  .entry-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 28px;
+    align-items: start;
+  }
+  .entry-card {
+    margin: 0;
+    position: sticky;
+    top: 96px;
+  }
+  .entry-card img {
+    display: block;
+    width: 100%;
+  }
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 4px solid var(--gold-dark);
+  }
+  .pager a {
+    font: 9px/1.6 var(--pixel);
+    text-decoration: none;
+  }
+  .branch h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+    margin: 0 0 1.2em;
+  }
+  .mini-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 12px;
+    background: var(--card);
+    border: 2px solid color-mix(in srgb, var(--accent, var(--line)) 60%, transparent);
+  }
+  .mini-icon {
+    width: 56px;
+    height: 56px;
+    flex: none;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin: 0 0 1.5em;
+  }
+}
+
+@media (max-width: 1180px) {
+  .wiki-page.with-toc {
+    display: block;
+  }
+  .wiki-toc {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hop-wiki-content {
+    .entry-body,
+    .hero {
+      grid-template-columns: 1fr;
+    }
+    .entry-card {
+      position: static;
+      max-width: 340px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .hop-wiki-content {
+    .perk-grid {
+      grid-template-columns: 1fr;
+    }
+    .entry-head {
+      align-items: flex-start;
+    }
+    .entry-icon {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hop-wiki-content .perk-tile a {
+    transition: none;
+  }
+}

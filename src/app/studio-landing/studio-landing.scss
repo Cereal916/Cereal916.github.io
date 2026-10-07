@@ -205,6 +205,66 @@ $font-body: 'PressStart2P-Regular', sans-serif;
   }
 }
 
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-social {
+  margin-left: 2rem;
+}
+
+.demo-announcement {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  padding: 1.25rem 2rem;
+  background-color: $bg-card;
+  border-bottom: 4px solid $magenta-spark;
+  font-family: $font-pixel;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  strong {
+    color: $gold-primary;
+  }
+
+  .announce-tag {
+    background-color: $magenta-spark;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+
+  .announce-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      margin: 0;
+    }
+  }
+}
+
 .cta-btn-primary, .cta-btn-sm {
   font-family: $font-pixel;
   font-weight: 700;
@@ -257,6 +317,8 @@ $font-body: 'PressStart2P-Regular', sans-serif;
     font-size: 0.95rem;
     margin-top: 1rem;
     color: rgba($text-muted, 0.4);
+    // The address is one long word in the pixel font; let it break on phones.
+    overflow-wrap: anywhere;
   }
 }
 
@@ -290,7 +352,9 @@ $font-body: 'PressStart2P-Regular', sans-serif;
     flex-direction: column;
     gap: 1.25rem;
     padding: 1.5rem;
+    .nav-links { flex-wrap: wrap; justify-content: center; row-gap: 1rem; }
     .nav-links a { margin: 0 0.75rem; }
+    .nav-social { margin-left: 0.75rem; }
   }
   .content-section { padding: 3rem 1.5rem; }
   .hero-section h1 { font-size: 2.8rem; }

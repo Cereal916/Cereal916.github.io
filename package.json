@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "wiki": "python hop-wiki/build.py",
+    "wiki:serve": "python hop-wiki/build.py && ng serve",
     "deploy": "ng deploy --base-href=\"https://slapcraftgames.com\" --cname=\"slapcraftgames.com\""
   },
   "private": true,

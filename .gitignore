@@ -1,24 +1,46 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# This repository is public: anything not ignored here can be pushed.
 
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
+*.tsbuildinfo
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.yarn/
 
-# IDEs and editors
+# Angular CLI caches and local build output
+/.angular/
+/.nx/
+
+# Secrets and machine-local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDEs and editors (shared IntelliJ run configurations in .run/ are committed)
 .idea/
+*.iml
+*.ipr
+*.iws
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
+*.swp
+*~
 
 # Visual Studio Code
 .vscode/*
@@ -29,16 +51,39 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Coding agents' local state
+.claude/settings.local.json
+.claude/worktrees/
+
 # Miscellaneous
-/.angular/cache
 .sass-cache/
+.eslintcache
+.cache/
 /connect.lock
 /coverage
+/test-results
 /libpeerconnection.log
 testem.log
+*.log
 /typings
 __screenshots__/
 
+# Python (the wiki builder)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
 # System files
 .DS_Store
+._*
 Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# House of Pips wiki build checks and Steam guide draft. The generated
+# public/hop/wiki-data/ stays committed: the deploy publishes it as built.
+/hop-wiki/.build
+# Spoiler page and boss data: kept locally, never pushed (the repository is public)
+/hop-wiki/private

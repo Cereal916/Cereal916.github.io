@@ -1,5 +1,8 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { HOP_DEMO_URL } from '../hop-home/hop-home';
+import { SocialLinks } from '../social-links/social-links';
 
 interface GameProject {
   title: string;
@@ -12,7 +15,7 @@ interface GameProject {
 @Component({
   selector: 'app-studio-landing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, SocialLinks],
   templateUrl: './studio-landing.html',
   styleUrls: ['./studio-landing.scss'],
 })
@@ -21,6 +24,7 @@ export class StudioLandingComponent {
   studioEmail = 'contact@slapcraftgames.com';
   studioTagline = 'Forging High-Impact 2D Pixel Experiences';
   currentYear = new Date().getFullYear();
+  demoUrl = HOP_DEMO_URL;
   contactHighlighted = signal(false);
 
   highlightContact(): void {
@@ -41,7 +45,7 @@ export class StudioLandingComponent {
   activeProject: GameProject = {
     title: 'House of Pips: a Domino Roguelike',
     engine: 'In development with LÖVE (Love2D) and Lua',
-    status: 'In Development — Planned for Steam',
+    status: 'Demo Out Now on Steam',
     description:
       'A roguelike-inspired domino game in development, where scoring abilities, perks, and changing house rules shape each match. Build your strategy, grow stronger, and outplay your rival.',
     features: [

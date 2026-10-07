@@ -1,0 +1,93 @@
+<div class="hop-wiki" [class.menu-open]="menuOpen()">
+  <a class="skip" href="#wiki-content" (click)="skipToContent($event)">Skip to content</a>
+  <header class="wiki-top">
+    <a class="studio-link" routerLink="/">
+      <img src="assets/images/slapcraft-logo-source-alpha.png" alt="" width="36" height="36" />
+      <span>Slapcraft Games</span>
+    </a>
+    <a class="brand" [routerLink]="home">
+      <img [src]="data + 'img/site/logo.png'" alt="" width="40" height="40" />
+      <span>House of Pips <small>Wiki</small></span>
+    </a>
+    <div class="wiki-search" role="search">
+      <label class="visually-hidden" for="wiki-search-box">Search the wiki</label>
+      <input
+        #searchBox
+        id="wiki-search-box"
+        type="search"
+        placeholder="Search perks, rules, modes..."
+        autocomplete="off"
+        spellcheck="false"
+        [value]="query()"
+        (input)="onSearch(searchBox.value)"
+        (focus)="searchOpen.set(true)"
+        (keydown)="onSearchKey($event)"
+      />
+      @if (searchOpen() && query().trim()) {
+        <ol class="search-results">
+          @for (result of results(); track result.entry.u; let index = $index) {
+            <li>
+              <a
+                [href]="result.entry.u"
+                [attr.aria-selected]="index === active() ? 'true' : null"
+                (click)="openResult($event, result.entry.u)"
+              >
+                <span class="result-title">{{ result.entry.t }}</span>
+                <span class="result-section">{{ result.entry.s }}</span>
+                <span class="result-text">{{ result.snippet }}</span>
+              </a>
+            </li>
+          } @empty {
+            <li class="result-empty">No results. Try a perk name or a rule such as “boneyard”.</li>
+          }
+        </ol>
+      }
+    </div>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-controls="wiki-sidebar"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      Menu
+    </button>
+  </header>
+
+  <div class="wiki-layout">
+    <nav id="wiki-sidebar" class="wiki-sidebar" aria-label="Wiki pages">
+      @for (group of manifest()?.nav ?? []; track group.section) {
+        <p class="nav-heading">{{ group.section }}</p>
+        <ul>
+          @for (page of group.pages; track page.route) {
+            <li>
+              <a
+                [routerLink]="page.route"
+                routerLinkActive="current"
+                ariaCurrentWhenActive="page"
+                [routerLinkActiveOptions]="activeOptions(page.route)"
+                (click)="closeMenu()"
+                >{{ page.title }}</a
+              >
+            </li>
+          }
+        </ul>
+      }
+    </nav>
+    <main id="wiki-content" class="wiki-main" tabindex="-1">
+      @if (manifest() === null) {
+        <h1>The wiki is unavailable</h1>
+        <p>The House of Pips wiki could not be loaded. Please try again shortly.</p>
+      } @else {
+        <router-outlet />
+      }
+    </main>
+  </div>
+
+  <footer class="wiki-footer">
+    <p>
+      Player guide for House of Pips {{ manifest()?.version }}. House of Pips is made by
+      <a routerLink="/">Slapcraft Games</a>.
+    </p>
+  </footer>
+</div>

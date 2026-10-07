@@ -1,0 +1,474 @@
+// House of Pips wiki chrome. Global (ViewEncapsulation.None) but scoped by
+// .hop-wiki, so nothing reaches the studio landing page. Colours follow the
+// Slapcraft palette; rarity colours and the Press Start 2P typeface match the
+// game.
+
+.hop-wiki {
+  --bg: #120917;
+  --card: #1c1124;
+  --card-2: #26172f;
+  --line: #3a2546;
+  --gold: #ffc51a;
+  --gold-dark: #8a5200;
+  --pink: #ff0066;
+  --text: #fffdf2;
+  --prose: #e4d9ea;
+  --strong: #fff0bd;
+  --muted: #bdaec4;
+  --blue: #3d9eff;
+  --common: #bfb8c7;
+  --uncommon: #40d17a;
+  --rare: #3d94ff;
+  --epic: #b847ff;
+  --legendary: #ffb31a;
+  --malus: #ff1429;
+  --radius: 4px;
+  --pixel: 'PressStart2P-Regular', ui-monospace, monospace;
+  --body: 'PressStart2P-Regular', ui-monospace, monospace;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg)
+    radial-gradient(1100px 520px at 70% -10%, rgba(28, 17, 36, 0.9) 0%, transparent 65%);
+  color: var(--text);
+  font: 13px/1.9 var(--body);
+
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: var(--gold);
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    color: var(--pink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 2px;
+  }
+
+  .skip {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .skip:focus {
+    left: 16px;
+    top: 8px;
+    z-index: 50;
+    background: var(--gold);
+    color: var(--bg);
+    padding: 8px 12px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  h1,
+  h2,
+  h3,
+  .nav-heading,
+  .brand span,
+  .studio-link span {
+    font-family: var(--pixel);
+    font-weight: 400;
+  }
+}
+
+.wiki-top {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 24px;
+  background: rgba(18, 9, 23, 0.95);
+  border-bottom: 4px solid var(--gold-dark);
+
+  .studio-link,
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .studio-link {
+    color: var(--muted);
+    font-size: 10px;
+    padding-right: 20px;
+    border-right: 2px dashed var(--line);
+  }
+
+  .brand {
+    color: var(--gold);
+    font-size: 13px;
+  }
+
+  .brand small {
+    color: var(--pink);
+    font-size: 9px;
+  }
+
+  img {
+    image-rendering: pixelated;
+  }
+}
+
+.wiki-search {
+  position: relative;
+  flex: 1;
+  max-width: 520px;
+  margin-left: auto;
+
+  input {
+    width: 100%;
+    padding: 9px 12px;
+    border-radius: var(--radius);
+    border: 2px solid var(--line);
+    background: var(--card);
+    color: var(--text);
+    font: inherit;
+    font-size: 12px;
+  }
+
+  input:focus {
+    border-color: var(--gold);
+  }
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 70vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--card);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+
+  a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a[aria-selected='true'] {
+    background: var(--card-2);
+    color: var(--text);
+  }
+
+  .result-title {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .result-section {
+    color: var(--pink);
+    font-size: 10px;
+    margin-left: 6px;
+  }
+
+  .result-text,
+  .result-empty {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .result-empty {
+    padding: 8px 10px;
+  }
+}
+
+.nav-toggle {
+  display: none;
+  border: 2px solid var(--gold-dark);
+  background: var(--card);
+  color: var(--gold);
+  padding: 8px 12px;
+  font: 10px var(--pixel);
+  cursor: pointer;
+}
+
+.wiki-layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 36px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 24px 56px;
+}
+
+.wiki-main {
+  min-width: 0;
+  outline: none;
+}
+
+.wiki-sidebar {
+  position: sticky;
+  top: 92px;
+  align-self: start;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  font-size: 11px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px;
+  }
+
+  a {
+    display: block;
+    padding: 3px 10px;
+    color: var(--text);
+    text-decoration: none;
+    border-left: 3px solid transparent;
+  }
+
+  a:hover {
+    background: var(--card);
+    color: var(--gold);
+  }
+
+  a.current {
+    border-left-color: var(--gold);
+    background: var(--card-2);
+    color: var(--gold);
+  }
+}
+
+.hop-wiki .nav-heading {
+  color: var(--pink);
+  font-size: 9px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.wiki-footer {
+  border-top: 4px solid var(--gold-dark);
+  color: var(--muted);
+  font-size: 11px;
+  padding: 20px 24px;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+// Generic page-body elements; the catalogue styles live with the page.
+.hop-wiki-content {
+  .table-wrap {
+    overflow-x: auto;
+    margin: 0 0 1.2em;
+    border: 2px solid var(--line);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  th,
+  td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--line);
+  }
+  thead th {
+    background: var(--card-2);
+    color: var(--gold);
+  }
+  tbody tr:last-child > * {
+    border-bottom: 0;
+  }
+  tbody th {
+    color: var(--text);
+    font-weight: 600;
+  }
+  table.facts th {
+    width: 34%;
+  }
+  ul.compact {
+    margin: 0;
+    padding-left: 1.1em;
+  }
+  // Glossary-style lists: each term sits on its own line above its text.
+  ul.terms {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.terms > li {
+    margin-bottom: 1.2em;
+    padding: 0 0 0 14px;
+    border-left: 3px solid var(--line);
+  }
+  .term {
+    display: block;
+    color: var(--gold);
+  }
+  .term strong {
+    color: inherit;
+  }
+
+  blockquote {
+    margin: 0 0 1.2em;
+    padding: 12px 18px;
+    background: var(--card);
+    border-left: 4px solid var(--gold);
+  }
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+  .card-text {
+    color: var(--accent, var(--text));
+    font-style: italic;
+    border-left-color: currentColor;
+  }
+  .card-text footer {
+    color: var(--muted);
+    font-size: 10px;
+    font-style: normal;
+    margin-top: 6px;
+  }
+  .callout {
+    margin: 0 0 1.2em;
+    padding: 12px 18px;
+    border: 2px solid var(--line);
+    background: var(--card);
+  }
+  .callout > :last-child {
+    margin-bottom: 0;
+  }
+  .callout-title {
+    font-family: var(--pixel);
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+  .callout-tip {
+    border-color: var(--uncommon);
+    .callout-title {
+      color: var(--uncommon);
+    }
+  }
+  .callout-note {
+    border-color: var(--blue);
+    .callout-title {
+      color: var(--blue);
+    }
+  }
+  .callout-warning {
+    border-color: var(--malus);
+    .callout-title {
+      color: var(--malus);
+    }
+  }
+  .callout-example {
+    border-color: var(--gold);
+    .callout-title {
+      color: var(--gold);
+    }
+  }
+  details.spoiler {
+    margin: 0 0 1.2em;
+    border: 2px dashed var(--pink);
+    padding: 10px 16px;
+    background: var(--card);
+  }
+  details.spoiler summary {
+    cursor: pointer;
+    color: var(--pink);
+    font-weight: 600;
+  }
+  figure.shot {
+    margin: 0 0 1.6em;
+  }
+  figure.shot img {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--gold-dark);
+  }
+  figcaption {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 860px) {
+  .wiki-top {
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    gap: 12px;
+
+    .studio-link {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    .studio-link span {
+      display: none;
+    }
+
+    .brand {
+      min-width: 0;
+      white-space: normal;
+      font-size: 10px;
+      line-height: 1.6;
+    }
+  }
+
+  .wiki-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  .nav-toggle {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .wiki-layout {
+    display: block;
+    padding: 16px;
+  }
+
+  .wiki-sidebar {
+    position: static;
+    max-height: none;
+    display: none;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: var(--card);
+    border: 2px solid var(--line);
+  }
+
+  .menu-open .wiki-sidebar {
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+# Screenshots the wiki shows: a key and its caption, separated by a tab. Each
+# picture is public/hop/wiki-data/img/screens/<key>.png. The build fails when a
+# page uses a key that is missing here or a listed key is never used.
+# Never add a screenshot that shows late-game secrets or the story's ending.
+main-menu	The main menu of a brand-new career. Nana's tutorial unlocks **Play**, **Puzzles** and **Multiplayer**.
+main-menu-continue	With a saved match, **CONTINUE** takes you straight back to the table.
+table	A hand in progress: your rack at the bottom, Rival's face-down rack at the top, scores and perks along the sides.
+table-high-contrast	The same table with **High contrast** and **Large text** switched on.
+table-targets	Picking up a bone shows every place it can go.
+boneyard	Drawing from the boneyard: you choose which face-down bone to take.
+hand-setup	The hand setup screen before each hand, where pre-hand supplies and Last Call are used.
+ledger	The match ledger lists every play, bonus, malus and perk use.
+draft	A perk draft. The red card is the Malus. **Reroll** and **Save** come from skills; **Take & Redraw** is the Malus bargain.
+hand-win	The hand summary after a won hand.
+bucks-receipt	The Bone Bucks receipt for a hand.
+xp-receipt	The XP receipt for a hand.
+skill-tree-sense	The **Table Sense** tab of the skill tree.
+skill-tree-fortune	The **Fortune** tab of the skill tree.
+skill-tree-choice	The **House Rules** tab of the skill tree.
+perks-compendium	The Perks compendium, where you unlock perks for your drafts.
+supply-shop	The Supply Shop.
+inventory-boxes	Bone Boxes in the Inventory, with the odds for each rarity printed on the box.
+slap-track	The Slap Track: one reward for every career level.
+cosmetics-tables	Cosmetics: table skins.
+cosmetics-dominoes	Cosmetics: domino skins.
+modes	The Modes screen early in a career. Locked modes list the career trials that open them.
+custom-mode	Custom mode: build your own table rules.
+puzzles	The puzzle list.
+puzzle-board	A puzzle in progress: a fixed hand, a fixed board and a goal.
+tutorial-menu	The Tutorials menu: Nana's lesson and Rival School.
+tutorial-lesson	Nana explaining spinners in her tutorial.
+rival-school	Rival School: one lesson for each of Rival's table styles.
+multiplayer-entry	Choosing how to play online.
+multiplayer-lobby	A private lobby with a friend.
+multiplayer-standings	Online standings and leaderboards.
+settings-general	Settings, General tab.
+settings-animation	Settings, Animation tab.
+achievements	The achievements gallery.

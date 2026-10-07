@@ -1,0 +1,63 @@
+<div class="hop-home">
+  <nav class="hop-nav">
+    <a class="studio" routerLink="/">Slapcraft Games</a>
+    <app-social-links />
+  </nav>
+
+  <header class="hop-hero">
+    <img src="hop/wiki-data/img/site/logo.png" alt="" class="hop-logo" width="128" height="128" />
+    <h1>House of Pips</h1>
+    <p class="hop-subtitle">a Domino Roguelike</p>
+    <p class="hop-badge">Free demo out now on Steam</p>
+    <p class="hop-pitch">
+      A roguelike-inspired domino game where scoring abilities, perks and changing house rules shape
+      each match. Build your strategy, grow stronger, and outplay your rival.
+    </p>
+    <div class="hop-actions">
+      <a class="btn btn-primary" [href]="demoUrl" target="_blank" rel="noopener noreferrer">
+        Play the Free Demo on Steam
+      </a>
+      <a class="btn" routerLink="/hop/wiki">Read the Player Wiki</a>
+    </div>
+  </header>
+
+  <section class="hop-section" aria-labelledby="hop-videos">
+    <h2 id="hop-videos">Watch House of Pips</h2>
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/fOqiFFHjgmo?list=PLaMPl9FW9Cug"
+        title="House of Pips videos on YouTube"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="
+          accelerometer;
+          autoplay;
+          clipboard-write;
+          encrypted-media;
+          gyroscope;
+          picture-in-picture;
+          web-share;
+        "
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="video-link">
+      <a [href]="playlistUrl" target="_blank" rel="noopener noreferrer"
+        >Watch the playlist on YouTube</a
+      >
+    </p>
+  </section>
+
+  <section class="hop-section" aria-labelledby="hop-screens">
+    <h2 id="hop-screens">From the table</h2>
+    <div class="screens">
+      @for (shot of screenshots; track shot.src) {
+        <img [src]="shot.src" [alt]="shot.alt" loading="lazy" width="1920" height="1080" />
+      }
+    </div>
+  </section>
+
+  <footer class="hop-footer">
+    <p>House of Pips is made by <a routerLink="/">Slapcraft Games</a>.</p>
+  </footer>
+</div>

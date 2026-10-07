@@ -1,0 +1,196 @@
+$bg-dark: #120917;
+$bg-card: #1c1124;
+$gold-primary: #ffc51a;
+$gold-dark: #8a5200;
+$magenta-spark: #ff0066;
+$text-light: #fffdf2;
+$text-muted: #bdaec4;
+$font-pixel: 'PressStart2P-Regular', sans-serif;
+
+.hop-home {
+  min-height: 100vh;
+  background-color: $bg-dark;
+  color: $text-light;
+  font-family: $font-pixel;
+}
+
+.hop-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba($bg-dark, 0.95);
+  border-bottom: 4px solid $gold-dark;
+
+  .studio {
+    color: $gold-primary;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $magenta-spark;
+    }
+  }
+}
+
+.hop-hero {
+  padding: 4rem 1.5rem 3rem;
+  text-align: center;
+  background: radial-gradient(circle, rgba($bg-card, 0.7) 0%, $bg-dark 75%);
+  border-bottom: 2px dashed rgba($gold-dark, 0.4);
+
+  .hop-logo {
+    image-rendering: pixelated;
+    filter: drop-shadow(0 0 20px rgba($magenta-spark, 0.35));
+  }
+
+  h1 {
+    margin: 1.5rem 0 0.5rem;
+    color: $gold-primary;
+    font-size: clamp(1.8rem, 6vw, 3.5rem);
+    text-transform: uppercase;
+  }
+}
+
+.hop-subtitle {
+  margin: 0 0 1.5rem;
+  color: $text-muted;
+  font-size: 0.9rem;
+}
+
+.hop-badge {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.6rem 1rem;
+  background: $magenta-spark;
+  color: $text-light;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.hop-pitch {
+  max-width: 46rem;
+  margin: 0 auto 2rem;
+  font-size: 0.85rem;
+  line-height: 1.9;
+}
+
+.hop-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 3px solid $gold-primary;
+  color: $gold-primary;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $gold-primary;
+    color: $bg-dark;
+  }
+}
+
+.btn-primary {
+  background-color: $gold-primary;
+  color: $bg-dark;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $magenta-spark;
+    border-color: $magenta-spark;
+    color: $text-light;
+  }
+}
+
+.hop-section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+
+  h2 {
+    margin: 0 0 1.5rem;
+    color: $gold-primary;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.video-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 4px solid $gold-dark;
+  background: $bg-card;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.video-link {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 3px solid $gold-dark;
+  }
+}
+
+a {
+  color: $gold-primary;
+}
+
+a:hover {
+  color: $magenta-spark;
+}
+
+.hop-footer {
+  padding: 2rem 1.5rem;
+  border-top: 4px solid $gold-dark;
+  color: $text-muted;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .hop-nav {
+    padding: 0.8rem 1rem;
+
+    .studio {
+      font-size: 0.7rem;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

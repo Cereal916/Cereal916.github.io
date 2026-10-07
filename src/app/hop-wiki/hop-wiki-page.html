@@ -1,0 +1,31 @@
+@if (page(); as current) {
+  <div class="wiki-page" [class.with-toc]="current.toc.length >= 3">
+    <article
+      class="hop-wiki-content"
+      [innerHTML]="body()"
+      (click)="onClick($event)"
+      (input)="onInput($event)"
+      (change)="onChange($event)"
+    ></article>
+    @if (current.toc.length >= 3) {
+      <nav class="wiki-toc" aria-label="On this page">
+        <p class="nav-heading">On this page</p>
+        <ul>
+          @for (entry of current.toc; track entry.id) {
+            <li>
+              <a [href]="tocLink(entry.id)" (click)="onClick($event)">{{ entry.text }}</a>
+            </li>
+          }
+        </ul>
+      </nav>
+    }
+  </div>
+} @else if (missing()) {
+  <div class="hop-wiki-content">
+    <h1>Page not found</h1>
+    <p>
+      That page isn't in the House of Pips wiki. Try the search box, or go back to the
+      <a [href]="home" (click)="onClick($event)">wiki home</a>.
+    </p>
+  </div>
+}

@@ -6,8 +6,19 @@
       <a href="#projects">Projects</a>
       <a href="#about">About Studio</a>
       <a [href]="'mailto:' + studioEmail" class="cta-btn-sm" (click)="highlightContact()">Contact Us</a>
+      <app-social-links class="nav-social" />
     </div>
   </nav>
+
+  <!-- House of Pips demo announcement -->
+  <aside class="demo-announcement" aria-label="House of Pips demo announcement">
+    <span class="announce-tag">Out now</span>
+    <p>The <strong>House of Pips</strong> demo is out now on Steam!</p>
+    <div class="announce-actions">
+      <a [href]="demoUrl" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">Play the Demo</a>
+      <a routerLink="/hop" class="cta-btn-sm">House of Pips</a>
+    </div>
+  </aside>
 
   <!-- Hero Section -->
   <header class="hero-section">
@@ -44,6 +55,12 @@
             <span class="bullet-spark">✦</span> {{ feature }}
           </li>
         </ul>
+      </div>
+
+      <div class="card-actions">
+        <a [href]="demoUrl" target="_blank" rel="noopener noreferrer" class="cta-btn-primary">Play the Demo</a>
+        <a routerLink="/hop" class="cta-btn-sm">House of Pips</a>
+        <a routerLink="/hop/wiki" class="cta-btn-sm">Player Wiki</a>
       </div>
     </div>
   </section>
