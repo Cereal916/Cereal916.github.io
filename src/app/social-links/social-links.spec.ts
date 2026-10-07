@@ -25,13 +25,14 @@ describe('SocialLinks', () => {
     }
   });
 
-  it('gives every copy of the Steam mark its own mask', async () => {
+  it('draws every mark without url(#id) references the base href would break', async () => {
     const fixture = TestBed.createComponent(TwoCopies);
     await fixture.whenStable();
-    const masks = Array.from((fixture.nativeElement as HTMLElement).querySelectorAll('mask')).map(
-      (mask) => mask.id,
-    );
-    expect(masks.length).toBe(2);
-    expect(new Set(masks).size).toBe(2);
+    const marks = Array.from((fixture.nativeElement as HTMLElement).querySelectorAll('svg'));
+    expect(marks.length).toBe(6);
+    for (const mark of marks) {
+      expect(mark.querySelector('mask, clipPath, defs, [id]')).toBeNull();
+      expect(mark.innerHTML).not.toContain('url(');
+    }
   });
 });
