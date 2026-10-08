@@ -23,11 +23,16 @@ Nana teaches the rules of her house in seventeen short steps:
 
 - **It is required.** Play, Puzzles and Multiplayer stay locked until you
   finish it once.
-- Finishing it unlocks **Old School** and earns the **Nana Knows Best**
-  achievement. Nana then sits down for a short Old School game with you, first
-  to 75.
+- Finishing the lesson earns the **Nana Knows Best** achievement. Nana then
+  sits down for a short Old School game with you, first to 75.
+- Complete that match, win or lose, to unlock **Old School**. **Classic Table**
+  stays selected for your next game. If you leave the match early, replay
+  Nana's lesson to play it again.
 - Every step works with the mouse, the keyboard or a controller, and the
   on-screen prompts change to match.
+- In the rotation lesson, select five-six and right-click once. Then click the
+  highlighted top end or drag the rotated bone there. Picking up the same held
+  bone again keeps its orientation.
 - You can replay it from **Tutorials > Replay Nana** at any time.
 
 ## Rival School

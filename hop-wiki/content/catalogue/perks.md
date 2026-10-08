@@ -255,7 +255,8 @@ and they trade places.** You pick Rival's bone blind.
 
 **Arm** Loaded End on your turn, then you may play a bone on an end it **misses
 by exactly one pip** (for example a 4 against an open 5 or 3). The placement
-preview shows the change before you commit.
+preview keeps a **+1** or **−1** cue visible before you commit. The status
+column shows the armed perk and remaining uses once.
 
 - The charge is only spent when you actually make a play that would otherwise
   be illegal. If you make an ordinary play instead, the arming is cancelled
@@ -268,6 +269,9 @@ preview shows the change before you commit.
 
 **Arm** Counterfeit Pip, then one of your **blank bones may be played on any
 open end** as if its blank matched.
+
+A compact icon marks affected landing previews. The status column shows the
+armed perk and remaining uses; hover or focus a landing for the outcome.
 
 - The double blank takes the end's value on both halves, so 0-0 played on a 4
   becomes a 4-4 for the open ends and for scoring.
@@ -457,6 +461,9 @@ When you lose a hand, your remaining bones **award the winner nothing**.
 **Arm** Master Key, then play **any bone on any open end**, even if the numbers
 don't match. The bone keeps its printed numbers.
 
+A compact key icon marks affected landing previews. The status column shows
+the armed perk and remaining uses; hover or focus a landing for the outcome.
+
 - The charge is only spent by a play that would otherwise be illegal. An
   ordinary play cancels the arming and keeps the charge.
 - A double still cannot be played against a double.
@@ -623,8 +630,12 @@ bonus lines and one copy of Perk Tax: the play scores **18**.
 
 ## stumble
 
-**Malus.** After **any play that scores for you**, your **next turn must start
-with a boneyard draw**. After that draw you may play as normal.
+**Malus.** After **any play that scores for you**, your **next turn starts
+with an automatic boneyard draw**. The game explains that Stumble caused it and
+plays the Malus sound. After that draw you may play as normal.
+
+- Other draw effects still apply. If they reveal several candidates, you choose
+  which bones to keep.
 
 - Once the boneyard is empty the requirement lifts and you play normally.
 - You can't use {{perk:catch_and_release}} on this draw.

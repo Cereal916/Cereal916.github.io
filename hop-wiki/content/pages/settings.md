@@ -22,7 +22,11 @@ Changes save automatically. Settings has four tabs: **General**,
 - **Sound effects** and **Music** volume.
 - **Music order**: play your selected song or shuffle, plus a **Next song**
   button.
-- **Anonymous error reports**: whether crash reports may be sent.
+- **Anonymous error reports**: choose whether the game may send bug reports.
+  The first-launch prompt explains what is included and what is excluded. You
+  can change your answer here at any time.
+
+{{shot:error-report-consent}}
 
 ## Animation
 
@@ -30,7 +34,8 @@ Changes save automatically. Settings has four tabs: **General**,
 
 - **Draft reveal**: how perk cards are revealed (Pixel scan, Conjurer's Seal,
   Bone Cascade, Jackpot Vault or Minimal).
-- **Score popups**: Soft shadow or Pixel outline lettering for score calls.
+- **Score popups**: Pixel outline (the default) or Soft shadow lettering for
+  score calls. Your saved choice is kept across updates.
 - **Animation speed**: Cinematic, Quick or Instant.
 - **Avatar microphone**: uses your microphone to animate your portrait outside
   voice chat. Off by default, and the audio is never saved.

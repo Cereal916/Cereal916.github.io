@@ -20,7 +20,8 @@ trials printed on its card.
 A few notes on the rules above:
 
 - **Old School** is traditional dominoes: no perks, no skills and no supplies.
-  It unlocks as soon as you finish Nana's tutorial.
+  Finish Nana's tutorial and the short match against her to unlock it. A win
+  or a loss counts. Classic Table stays selected until you choose a mode.
 - **All In** gives you every card in every draft, Malus included, so builds
   grow fast in both directions.
 - **Quick Draw** deals five-bone hands, so hands end quickly. Its unlock trial

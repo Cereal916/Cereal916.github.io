@@ -21,6 +21,12 @@ Your own volume and mute settings stay your own.
   other's lobbies.
 - The demo doesn't include online play.
 
+## Test builds
+
+To try a testing build, open the game's Steam **Properties → Game Versions &
+Betas** and select **testing**. Both opponents need the same Steam application
+and game version. **Steam Playtest** includes the full game's content, but its
+lobbies are separate from the full game's lobbies.
 ## Three ways to play
 
 - **Invite a friend** opens a private lobby with voice and typed chat. You
@@ -35,6 +41,29 @@ countdown, which you can cancel. **Play again** after a match returns you both
 to the lobby.
 
 {{shot:multiplayer-lobby}}
+
+## Receiving an invitation
+
+A friend's invitation plays a short chime and lights a glowing envelope at
+the top of the screen, including while you are playing solo. Click the envelope
+to see the friend's Steam name and avatar, plus the invitation's date and time
+in your local time zone using **AM/PM**. If the sent time is unavailable, the
+panel shows when you received it instead.
+
+{{shot:multiplayer-invitation}}
+
+- **Save and join** saves your current solo table or draft before entering your
+  friend's lobby. After leaving multiplayer, **Continue** resumes that solo
+  match. If saving fails, your current match stays open and you do not join.
+- **Join lobby** enters the lobby when you have no active solo match. A solo
+  match already saved in Continue remains available. Joining leaves any
+  waiting lobby you are currently in.
+- **Later**, **Esc**, or controller **Back** keeps the invitation available
+  while you carry on playing. **Decline** dismisses it.
+
+Finish an action before saving and joining. Cutscenes and other foreground
+choices keep the envelope unavailable until they finish. An invitation cannot
+replace a live online match, and blocked players' invitations stay hidden.
 
 ## Modes and loadouts
 
@@ -53,12 +82,49 @@ Online matches give both players **equal loadouts** instead of your career:
 Online drafts can offer any perk the mode allows, legendary perks included,
 whatever either player has unlocked in single-player.
 
+## Preparing each hand
+
+Both players choose their pre-hand items **at the same time**. Use an owned
+{{supply:boneyard_lantern}}, {{supply:hammer_wax}} or {{supply:dealers_dare}}, then
+click **Ready**. An item you use shows **Selected for this hand**. You can finish
+your choices while your opponent is still choosing. The deal begins when both
+players are ready.
+
+{{shot:multiplayer-hand-setup}}
+
+If you have no items to use before the hand, the screen explains that. Click
+**Continue** when you are ready, then wait for your opponent.
+
+{{shot:multiplayer-hand-setup-empty}}
+
+## Playing at the table
+
+Online matches use the same mouse, keyboard and controller controls as solo
+play. See {{page:controls}}.
+
+When {{perk:stumble}} requires a draw, the game draws for you before you play.
+A message names the Malus and its sound plays. If another draw effect offers a
+choice of revealed bones, you still choose which to keep. If the boneyard is
+empty, you can play a bone instead.
+
+{{shot:multiplayer-required-draw}}
+
+After confirming {{perk:pip_shift}} or {{perk:pip_shuffle}}, play that exposed
+bone before selecting another bone or visiting the boneyard. You can still
+rotate it and choose a matching open end.
+
+{{shot:multiplayer-committed-bone}}
+
+If a choice is unavailable, an explanation appears on the table. You can make
+another valid choice and carry on with the same match.
+
 ## Clocks
 
 - Each **turn** has a **60-second** clock. If it runs out, the player who ran
   out of time loses the match.
-- **Drafts and hand setup** have **120 seconds**. If time runs out, the game
-  makes a default choice for you, such as taking the best perk card offered.
+- **Drafts and hand setup** give each player **120 seconds** for their own
+  choices. If time runs out, the game takes the default draft card or confirms
+  **Ready** with the pre-hand items you have already chosen.
 - The clocks pause while a player is reconnecting.
 
 ## Disconnects, surrendering and leaving

@@ -27,7 +27,12 @@ you commit, and the tooltip shows the base score.
 ## pip_forecast
 
 Hovering a place to play shows the **open-end total the table would have**
-after that play, even when it would not score.
+after that play, even when it would not score. Compact number badges sit
+beside the landing previews, with one **Projected totals** caption in the
+status column. The bones stay visible; a crowded table keeps the forecast
+available in the landing tooltip.
+
+{{shot:pip-forecast}}
 
 ## rarity_luck
 

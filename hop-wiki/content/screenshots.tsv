@@ -6,7 +6,7 @@ main-menu	The main menu of a brand-new career. Nana's tutorial unlocks **Play**,
 main-menu-continue	With a saved match, **CONTINUE** takes you straight back to the table.
 table	A hand in progress: your rack at the bottom, Rival's face-down rack at the top, scores and perks along the sides.
 table-high-contrast	The same table with **High contrast** and **Large text** switched on.
-table-targets	Picking up a bone shows every place it can go.
+table-targets	Picking up a bone shows its landing previews; the side column holds the shared forecast caption and armed perk status.
 boneyard	Drawing from the boneyard: you choose which face-down bone to take.
 hand-setup	The hand setup screen before each hand, where pre-hand supplies and Last Call are used.
 ledger	The match ledger lists every play, bonus, malus and perk use.
@@ -36,3 +36,13 @@ multiplayer-standings	Online standings and leaderboards.
 settings-general	Settings, General tab.
 settings-animation	Settings, Animation tab.
 achievements	The achievements gallery.
+prestige-ready	When Prestige is ready, the idle menu help box points to the next story step.
+prestige-confirm	Prestige shows the next rank's skill points, XP and Bone Bucks bonuses before you confirm.
+multiplayer-invitation	An invitation: see your friend and the local sent time in AM/PM, then join, decline, or decide later.
+multiplayer-required-draw	Online: Stumble draws automatically before your play and names the Malus causing the draw.
+multiplayer-committed-bone	Online: play the exposed bone after confirming Pip Shift (Rare) or Pip Shuffle (Epic).
+multiplayer-hand-setup	Both players prepare their own items simultaneously, then confirm Ready.
+multiplayer-hand-setup-empty	No pre-hand items: click Continue to confirm you are ready.
+error-report-consent	First launch: choose whether anonymous bug reports may be sent; change your answer later in Settings.
+pip-forecast	Compact projected-total numbers sit beside the landing previews, with one shared caption and armed status.
+score-ends	Online scoring: only the outer 4 and 1 fly toward the five-point total; the spinner's bare short sides show no counts.

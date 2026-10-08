@@ -58,6 +58,10 @@ Boxes and more. Every hand pays out, win or lose:
 | Winning the match | {{n:economy.matchRewards.matchWin}} more |
 
 - **Golden Ledger** boosts add 50%.
+- Each Prestige adds {{n:career.prestigeBucksPercent}}% to Bone Bucks earned
+  from play. The shares add up to 5%, 10%, 15% and 20% at Ranks 2–5,
+  apply after other income bonuses, and have their own receipt line.
+  Shop refunds and Slap Track redemptions keep their listed values.
 - **Last Call** pays a 750 Bone Bucks (and 750 XP) jackpot. See
   {{page:matches}}.
 - A forfeited match pays no match reward.
@@ -91,12 +95,24 @@ start your career climb again with permanent bonuses. Each Prestige:
 - Adds {{n:career.prestigeBonusPoints}} bonus skill points per Prestige rank
   (they add up across ranks).
 - Adds {{n:career.prestigeXpPercent}}% to all the XP you earn, per rank.
+- Adds {{n:career.prestigeBucksPercent}}% to the Bone Bucks you earn from
+  play, per rank.
 - Adds one extra perk card to your drafts (not in All In).
 - Puts new cosmetics on the Slap Track.
 
 Prestiging resets your level and XP, skills, Bone Bucks, supplies, queued
 boosts, Bone Boxes and Slap Track claims. Unlocked perks, cosmetics, records
 and achievement progress all stay. Your rank can go up to 5.
+
+When Prestige is ready, the main menu's bottom help box says
+**“Prestige to progress in the story”** unless another useful tooltip is
+showing. After the ceremony, a short story conversation points you toward
+your next career climb. **Continue** finishes a speaking line first; the
+next press returns to the menu.
+
+{{shot:prestige-ready}}
+
+{{shot:prestige-confirm}}
 
 ## Records
 

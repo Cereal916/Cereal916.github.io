@@ -37,6 +37,11 @@ Open **Settings** during a match for two ways out:
 - **Rage quit** forfeits the match (and flips the table): it counts as a loss,
   and you get no match reward.
 
+A friend's multiplayer invitation also offers **Save and join** when the
+table or draft is ready to save. It saves the solo match before entering the
+lobby, so **Continue** can resume it after multiplayer. If saving fails, the
+game keeps your live match and does not join. See {{page:online}}.
+
 Anything that would throw away the current match first asks **Abandon
 round?** Choose **Keep playing** to back out with the table exactly as it was.
 
@@ -70,3 +75,8 @@ Choose **Keep my account** if you opened it by mistake.
 
 The demo saves separately from the full game, doesn't use Steam Cloud, and
 doesn't carry its career over to the full game.
+
+## Steam Playtest
+
+Steam Playtest uses the full game's local career and saves, so progress on this
+device is shared. Steam Cloud is not enabled for the Playtest.

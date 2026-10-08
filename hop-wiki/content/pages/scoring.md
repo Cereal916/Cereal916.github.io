@@ -20,6 +20,18 @@ scores; no perk turns a total of 12 into a scoring play. (The
 {{supply:pip_eraser}} supply is the exception: it lowers the total before this
 check, so it can turn 16 into a scoring 15.)
 
+## Reading the flying counts
+
+The numbers that fly from the table show each scoring end's contribution. An
+exposed double counts both halves, so a double-one shows **2**. Bare short
+sides of a spinner show no number because they add no points. A blank scoring
+end can still show **0**.
+
+Here the outer ends contribute **4 + 1 = 5**. The double-one's long sides are
+covered, and its empty short sides add nothing.
+
+{{shot:score-ends}}
+
 ## The order on a scoring play
 
 1. **Open-end total.** The sum of the open ends after your play, including any

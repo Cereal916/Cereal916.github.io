@@ -18,8 +18,10 @@ a hand.
 
 {{shot:tutorial-lesson}}
 
-Finishing it unlocks the rest of the menu and the **Old School** mode, and Nana
-invites you straight into a short Old School game against her (first to 75).
+Finishing it unlocks the rest of the menu, and Nana invites you straight into
+a short Old School game against her (first to 75). Completing that match,
+win or lose, unlocks **Old School**. **Classic Table** stays selected for your
+next game; choose Old School from **Modes** whenever you want to play it.
 See {{page:tutorials}} for both tutorials.
 
 ## 2. Find your way around the menu

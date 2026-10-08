@@ -18,7 +18,20 @@ them. On-screen prompts follow whatever you used last.
   branches of a spinner.
 - **Hover** almost anything for a tooltip: perks, supplies, bones, scores and
   buttons.
+- Buttons have flat backgrounds and colored borders. Hover over an enabled
+  button to show its gold outline.
 - Click the **boneyard** when you have no legal play.
+- Click a glowing **envelope** at the top to inspect a friend's multiplayer
+  invitation. In its panel, **Esc** or controller **Back** chooses Later and
+  keeps the invitation. During a table, the controller's action button
+  (Xbox **X** / PlayStation **Square**) reaches the envelope with the other
+  table actions.
+
+While holding a bone, {{skill:pip_forecast}} adds compact projected-total
+numbers beside the landing previews. An armed placement perk shows its name
+and remaining uses once in the status column, with a small marker on each
+affected landing. Hover or focus a landing to inspect its outcome and any
+required rotation. {{perk:pip_nudge}} keeps its **+1** or **−1** cue.
 
 {{shot:table-targets}}
 
