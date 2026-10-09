@@ -6,6 +6,12 @@ the release ships.
 
 ## Unreleased
 
+## 0.25.0-pre.10
+
+- Keeps solo and online flying counts and Ledger subtotals aligned with
+  supply-adjusted scores. Forecasts and scoring highlights now include an
+  armed Pip Eraser when its target survives the play, with new pictures.
+
 - Explains weighted flying end counts, doubled terminal pips and hidden bare
   spinner-side counts, with a corrected multiplayer scoring picture.
 

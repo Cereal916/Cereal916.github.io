@@ -24,6 +24,9 @@ need the bone rotated are marked "Rotate to play".
 When you pick up a bone, the places where it would **score** flare pink before
 you commit, and the tooltip shows the base score.
 
+An armed {{supply:pip_eraser}} is included when its targeted end will remain
+open after the play, in both solo and online matches.
+
 ## pip_forecast
 
 Hovering a place to play shows the **open-end total the table would have**
@@ -33,6 +36,12 @@ status column. The bones stay visible; a crowded table keeps the forecast
 available in the landing tooltip.
 
 {{shot:pip-forecast}}
+
+Totals include an armed {{supply:pip_eraser}} reduction while its target stays
+open. Covering that end removes the deduction from the forecast. Here **15**
+is a scoring landing after the reduction, in either solo or online play.
+
+{{shot:score-forecast-eraser}}
 
 ## rarity_luck
 

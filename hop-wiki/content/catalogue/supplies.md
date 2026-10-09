@@ -86,6 +86,8 @@ change.
 - Use it to turn a total such as 16 into a scoring 15.
 - The erased end has to still be open after your play. If you play on that end
   it is covered, nothing is erased, and the Pip Eraser is still spent.
+- Forecasts and scoring highlights include the armed reduction in solo and
+  online play. The flying count at that end shows its reduced contribution.
 
 :::example
 The open ends are 6, 4 and 3. You erase the 6, then play 3-6 on the open 3. The

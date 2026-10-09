@@ -46,3 +46,5 @@ multiplayer-hand-setup-empty	No pre-hand items: click Continue to confirm you ar
 error-report-consent	First launch: choose whether anonymous bug reports may be sent; change your answer later in Settings.
 pip-forecast	Compact projected-total numbers sit beside the landing previews, with one shared caption and armed status.
 score-ends	Online scoring: only the outer 4 and 1 fly toward the five-point total; the spinner's bare short sides show no counts.
+score-eraser	Solo and online counts use the same Pip Eraser deduction: an exposed double-six contributes 11, plus 4 for a base score of 15.
+score-forecast-eraser	The compact forecast and pink scoring highlight include the armed Pip Eraser reduction when its targeted end stays open.

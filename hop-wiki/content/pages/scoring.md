@@ -32,6 +32,13 @@ covered, and its empty short sides add nothing.
 
 {{shot:score-ends}}
 
+Solo and online play show the same adjusted end counts. If
+{{supply:pip_eraser}} reduces an exposed double-six's contribution from 12 to
+**11**, the flying number is **11**. With **4** at the other end, the base
+total is **15**, matching the scoring sequence and Ledger.
+
+{{shot:score-eraser}}
+
 ## The order on a scoring play
 
 1. **Open-end total.** The sum of the open ends after your play, including any
