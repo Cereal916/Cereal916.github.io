@@ -1,0 +1,54 @@
+{
+  "product": "ClipCabinet",
+  "appVersion": "1.9.1",
+  "screenshotGameId": "5296680",
+  "screenshotGameTitle": "House of Pips: a Domino Roguelike",
+  "publisher": "Slapcraft Games",
+  "rightsStatus": "publisher-confirmed",
+  "source": "https://github.com/Cereal916/steam-recording-browser/tree/v1.9.1/output/steam/store-kit",
+  "sampleLibrary": true,
+  "authoredDemonstrationBookmarks": true,
+  "imagesUnmodified": true,
+  "files": [
+    {
+      "file": "01-library-list_english.png",
+      "sha256": "ea3b60835f9623fe6ff5e0fcd8adff167e3ec57fa28da07c6ddea6a648c86d3d"
+    },
+    {
+      "file": "02-grid-view_english.png",
+      "sha256": "feff0b7b0eae09d761e9b62d372c89d31d51c55b5448a992629dc1c58ace7edc"
+    },
+    {
+      "file": "03-table-view_english.png",
+      "sha256": "2aeb189347be4d7cd2df1bdb3aa5d48be998515f50aaf068d12dc03b9f780814"
+    },
+    {
+      "file": "04-tags_english.png",
+      "sha256": "7cc30b4c67fb45399558db90c8bf81d52dbffc0d42f454144077c133de4ac8cd"
+    },
+    {
+      "file": "05-description_english.png",
+      "sha256": "55d046cd7673c007e87d762b0007ae7fbab8186f4b2884672d8e58d42d5d6292"
+    },
+    {
+      "file": "06-search_english.png",
+      "sha256": "a511d6709982349e2e9ca99a0beafb9a19b45a44caa5abb9b9ac7b4da4ef14fa"
+    },
+    {
+      "file": "07-timeline-markers_english.png",
+      "sha256": "efa9f92b86ac7014282e919fa3ff88de86ab26089bbcbd47dffeb9c41f7c6199"
+    },
+    {
+      "file": "08-export_english.png",
+      "sha256": "277bbc1dc171fb12493176b2f935b7cbfeae18d7a1a312be2c5b988b6451bfa3"
+    },
+    {
+      "file": "09-sorting_english.png",
+      "sha256": "81b56c7a4338148997e291660f7e09ebd4d51c2e86f2ab44b54a9abe04b14f29"
+    },
+    {
+      "file": "clipcabinet-icon.png",
+      "sha256": "d94ccf8d816071964b12ef4d5ca91e8e4eaad70abd749e17a5b6a6bd1b6d94f6"
+    }
+  ]
+}
