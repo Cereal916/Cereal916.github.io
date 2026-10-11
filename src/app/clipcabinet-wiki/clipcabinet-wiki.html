@@ -1,0 +1,606 @@
+<div class="clip-wiki">
+  <a class="skip-link" href="#wiki-content" (click)="skipToContent($event)">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="studio" routerLink="/" aria-label="Slapcraft Games home"
+        ><img
+          src="/assets/images/slapcraft-logo-source-alpha.png"
+          alt=""
+          width="30"
+          height="30"
+        /><span>Slapcraft Games</span></a
+      >
+      <a class="brand" [routerLink]="root"
+        ><img [src]="assets + 'clipcabinet-icon.png'" alt="" width="40" height="40" /><span
+          >ClipCabinet <small>User wiki</small></span
+        ></a
+      >
+      <div class="topbar-actions">
+        <a class="support" href="mailto:contact@slapcraftgames.com"
+          >Support <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="wiki-navigation"
+          [attr.aria-expanded]="menuOpen()"
+          (click)="menuOpen.set(!menuOpen())"
+        >
+          {{ menuOpen() ? 'Close' : 'Menu' }}
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="wiki-layout">
+    <aside class="sidebar" [class.is-open]="menuOpen()" id="wiki-navigation">
+      <div class="sidebar-label">THE CLIPCABINET GUIDE</div>
+      <nav aria-label="Wiki guides">
+        @for (group of groups; track group) {
+          <p class="nav-group">{{ group }}</p>
+          @for (guide of pages; track guide.slug) {
+            @if (guide.group === group) {
+              <a
+                [routerLink]="pageUrl(guide.slug)"
+                routerLinkActive="current"
+                [routerLinkActiveOptions]="{ exact: true }"
+                ariaCurrentWhenActive="page"
+                (click)="menuOpen.set(false)"
+                >{{ guide.label }}</a
+              >
+            }
+          }
+        }
+      </nav>
+      <p class="sidebar-note">Windows 64-bit<br />Guide for version 1.9.1</p>
+    </aside>
+    <main id="wiki-content" class="article" tabindex="-1">
+      <div class="breadcrumbs">
+        <a routerLink="/">Slapcraft Games</a><span aria-hidden="true">/</span
+        ><a [routerLink]="root">ClipCabinet</a><span aria-hidden="true">/</span
+        ><span>{{ page().label }}</span>
+      </div>
+      <header class="article-header">
+        <p class="eyebrow">{{ page().group }}</p>
+        <h1>{{ page().title }}</h1>
+        <p class="lead">{{ page().summary }}</p>
+      </header>
+      @switch (page().slug) {
+        @case ('') {
+          <section id="first-recording">
+            <h2>Your first recording</h2>
+            <ol class="steps">
+              <li>
+                <strong>Record in Steam.</strong> Enable Steam Game Recording and capture some
+                gameplay. ClipCabinet uses those existing recordings.
+              </li>
+              <li>
+                <strong>Open ClipCabinet.</strong> Your videos are automatically imported into its
+                library when the app opens. If the folder is not found, choose
+                <b>Settings → General → Recording folder</b> and select your Steam recording folder.
+              </li>
+              <li>
+                <strong>Double-click a clip.</strong> Watch it in the built-in player. Use the
+                timeline to seek, or choose <b>Export MP4</b> to make a shareable file.
+              </li>
+            </ol>
+            <div class="note">
+              <strong>Recorded something new?</strong> Click <b>Refresh</b> to rescan while
+              ClipCabinet is open. Your original Steam recordings stay unchanged.
+            </div>
+          </section>
+          <section id="library">
+            <h2>Meet your library</h2>
+            <p>
+              Steam handles recording. ClipCabinet adds tags, descriptions, search, and flexible
+              views to help you organize the results. Saved clips and background recordings appear
+              with their game and recording details.
+            </p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the ClipCabinet library screenshot"
+                (click)="
+                  openImage(
+                    '01-library-list_english.png',
+                    'The ClipCabinet library, showing House of Pips sample clips.'
+                  )
+                "
+              >
+                <img
+                  [src]="assets + '01-library-list_english.png'"
+                  alt="ClipCabinet list view with House of Pips clips, tags, descriptions, favorites, and search filters."
+                  width="1920"
+                  height="1080"
+                  fetchpriority="high"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>Your games, clips, and annotations in one library.</figcaption>
+            </figure>
+          </section>
+          <section id="next">
+            <h2>What to try next</h2>
+            <div class="next-links">
+              <a [routerLink]="pageUrl('organize')"
+                ><strong>Add some context <span aria-hidden="true">→</span></strong
+                ><span>Tags, descriptions, and favorites</span></a
+              >
+              <a [routerLink]="pageUrl('export')"
+                ><strong>Share a moment <span aria-hidden="true">→</span></strong
+                ><span>Original, H.264, HEVC, and AV1 export</span></a
+              >
+              <a [routerLink]="pageUrl('faq')"
+                ><strong>Find an answer <span aria-hidden="true">→</span></strong
+                ><span>Setup, playback, and data questions</span></a
+              >
+            </div>
+          </section>
+        }
+        @case ('organize') {
+          <section id="tags">
+            <h2>Add tags</h2>
+            <ol class="steps">
+              <li>Right-click a clip and choose <b>Tags</b>.</li>
+              <li>
+                Find an existing tag, or type a new one and select <b>Add</b>. Paste comma-separated
+                tags to add several at once.
+              </li>
+              <li>
+                Click <b>Save</b>. Use the tag filter or search box to find matching clips later.
+              </li>
+            </ol>
+            <p>
+              Use a few consistent labels: a game mode, a memorable moment, or something to review.
+              Remove a tag with its <b>×</b> button.
+            </p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the tags editor screenshot"
+                (click)="
+                  openImage(
+                    '04-tags_english.png',
+                    'The tags editor with rats, loot, and co-op tags.'
+                  )
+                "
+              >
+                <img
+                  [src]="assets + '04-tags_english.png'"
+                  alt="ClipCabinet tags editor with rats, loot, and co-op tags selected, plus Add and Save controls."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>Reusable tags keep related moments together.</figcaption>
+            </figure>
+          </section>
+          <section id="descriptions">
+            <h2>Write a description</h2>
+            <p>
+              Right-click a clip, choose <b>Description</b>, write a short note, and save. Describe
+              why the moment matters; descriptions appear in the library and can be searched.
+            </p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the description editor screenshot"
+                (click)="
+                  openImage('05-description_english.png', 'Adding a description to a saved clip.')
+                "
+              >
+                <img
+                  [src]="assets + '05-description_english.png'"
+                  alt="ClipCabinet description editor with a note saved alongside a House of Pips clip."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>Keep the story alongside the video.</figcaption>
+            </figure>
+          </section>
+          <section id="favorites">
+            <h2>Use favorites</h2>
+            <p>
+              Mark a clip as a favorite from its context menu or player. Enable
+              <b>Favorites only</b> to narrow the library to your saved highlights.
+            </p>
+            <div class="note">
+              Tags, descriptions, and favorites are stored separately from video files. See
+              <a [routerLink]="pageUrl('settings')" fragment="backup">Back up and restore</a> to
+              protect them.
+            </div>
+          </section>
+        }
+        @case ('browse') {
+          <section id="search">
+            <h2>Search and filter</h2>
+            <p>
+              Type a game, tag, description, or recording type into <b>Search clips</b>. Combine the
+              search with <b>All games</b>, <b>All tags</b>, <b>Favorites only</b>, or the timeline
+              event filter.
+            </p>
+            <p>Clear the search and reset the filters to see the full library again.</p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the clip search screenshot"
+                (click)="
+                  openImage('06-search_english.png', 'Searching a House of Pips sample library.')
+                "
+              >
+                <img
+                  [src]="assets + '06-search_english.png'"
+                  alt="ClipCabinet search filters the library to matching House of Pips clips."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>Search and filters work together.</figcaption>
+            </figure>
+          </section>
+          <section id="views">
+            <h2>List, grid, and table</h2>
+            <p>
+              Choose your clip layout in <b>Settings → General</b>. List keeps notes visible, grid
+              emphasizes thumbnails, and table makes it easy to compare details. Your annotations
+              carry across all three views.
+            </p>
+            <div class="view-buttons" role="group" aria-label="Preview library views">
+              @for (view of views; track view.id) {
+                <button
+                  type="button"
+                  [attr.aria-pressed]="selectedView().id === view.id"
+                  (click)="selectedView.set(view)"
+                >
+                  {{ view.label }}
+                </button>
+              }
+            </div>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                [attr.aria-label]="
+                  'Enlarge the ' + selectedView().label.toLowerCase() + ' view screenshot'
+                "
+                (click)="openImage(selectedView().file, selectedView().caption)"
+              >
+                <img
+                  [src]="assets + selectedView().file"
+                  [alt]="
+                    'ClipCabinet ' +
+                    selectedView().label.toLowerCase() +
+                    ' view with House of Pips sample clips.'
+                  "
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption aria-live="polite">{{ selectedView().caption }}</figcaption>
+            </figure>
+          </section>
+          <section id="sorting">
+            <h2>Sort your library</h2>
+            <p>
+              Use the sort menu to choose <b>Newest</b>, <b>Oldest</b>, <b>Largest</b>, or
+              <b>Smallest</b>. In table view, click a column header to sort by that column; resize
+              or reorder columns to suit your workflow.
+            </p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the sorting menu screenshot"
+                (click)="openImage('09-sorting_english.png', 'The library sort menu.')"
+              >
+                <img
+                  [src]="assets + '09-sorting_english.png'"
+                  alt="ClipCabinet sort menu showing newest, oldest, largest, and smallest options."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>Choose the order that makes the next clip easy to find.</figcaption>
+            </figure>
+          </section>
+        }
+        @case ('playback') {
+          <section id="player">
+            <h2>Open the player</h2>
+            <p>
+              Double-click a recording, or right-click it and choose <b>Play</b>. Use play/pause,
+              the seek buttons, and the volume controls. Drag the timeline to seek; hold
+              <b>Shift</b> while dragging for finer control.
+            </p>
+            <p>
+              Background sessions are grouped by game. For an active rolling recording, use
+              <b>Go live</b> to move toward the latest available footage.
+            </p>
+          </section>
+          <section id="markers">
+            <h2>Timeline markers</h2>
+            <p>
+              Steam events, ranges, achievement markers, and game-suggested clips appear when the
+              recording contains that data. Click a marker or an event card to jump to it. Use the
+              event-type filter to focus on what you want.
+            </p>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the player and timeline screenshot"
+                (click)="
+                  openImage(
+                    '07-timeline-markers_english.png',
+                    'House of Pips playback with authored demonstration bookmarks.'
+                  )
+                "
+              >
+                <img
+                  [src]="assets + '07-timeline-markers_english.png'"
+                  alt="ClipCabinet player showing House of Pips footage, seek controls, and three demonstration timeline bookmarks."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>
+                This sample uses authored demo bookmarks. Your markers depend on the data saved by
+                Steam.
+              </figcaption>
+            </figure>
+          </section>
+          <section id="shortcuts">
+            <h2>Timeline shortcuts</h2>
+            <p>With the timeline focused:</p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Key</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>Space</kbd></td>
+                    <td>Play or pause</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>←</kbd> / <kbd>→</kbd></td>
+                    <td>Seek back / forward 5 seconds</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Page Down</kbd> / <kbd>Page Up</kbd></td>
+                    <td>Seek back / forward 30 seconds</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Home</kbd> / <kbd>End</kbd></td>
+                    <td>Jump to the beginning / end</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        }
+        @case ('export') {
+          <section id="export-steps">
+            <h2>Export in three steps</h2>
+            <ol class="steps">
+              <li>
+                Right-click a recording and choose <b>Export MP4</b>, or use <b>Export MP4</b> in
+                the player.
+              </li>
+              <li>
+                Choose <b>Original</b>, <b>H.264</b>, <b>HEVC</b>, or <b>AV1</b>. For re-encoding,
+                choose whether to use hardware encoding.
+              </li>
+              <li>
+                Continue, choose the output file location in the Windows picker, and wait for the
+                export to finish.
+              </li>
+            </ol>
+            <figure>
+              <button
+                class="screenshot"
+                type="button"
+                aria-label="Enlarge the export options screenshot"
+                (click)="
+                  openImage('08-export_english.png', 'ClipCabinet MP4 export and codec options.')
+                "
+              >
+                <img
+                  [src]="assets + '08-export_english.png'"
+                  alt="ClipCabinet export options with original codec, H.264, HEVC, AV1, estimated sizes, and hardware encoding."
+                  width="1920"
+                  height="1080"
+                  loading="lazy"
+                />
+                <span>Enlarge screenshot <span aria-hidden="true">↗</span></span>
+              </button>
+              <figcaption>
+                Compare codec choices and estimated file sizes before exporting.
+              </figcaption>
+            </figure>
+          </section>
+          <section id="codecs">
+            <h2>Choose a codec</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Option</th>
+                    <th scope="col">Use it when…</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Original</b></td>
+                    <td>
+                      You want the fastest export without video quality loss. It preserves the
+                      recording codec, so playback compatibility stays the same.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>H.264</b></td>
+                    <td>You want a widely supported format for sharing and playback.</td>
+                  </tr>
+                  <tr>
+                    <td><b>HEVC / AV1</b></td>
+                    <td>
+                      Your playback device supports the codec and you want to try a more efficient
+                      encoding format.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section id="encoding">
+            <h2>GPU or CPU encoding</h2>
+            <p>
+              Hardware encoding tries a compatible NVIDIA, Intel, or AMD GPU and automatically falls
+              back to software if needed. Software encoding uses the CPU and can take longer. Size
+              estimates are approximate.
+            </p>
+            <div class="note">
+              Export creates a separate MP4; the original recording stays unchanged. If export
+              fails, check free disk space and the output folder, then try H.264 or software
+              encoding.
+            </div>
+          </section>
+        }
+        @case ('settings') {
+          <section id="general">
+            <h2>General settings</h2>
+            <p>
+              Open <b>Settings → General</b> to choose the recording folder, clip layout, and
+              interface language. The app follows Steam’s language by default; your explicit
+              language choice is remembered.
+            </p>
+            <details class="language-list">
+              <summary>See the 15 supported languages</summary>
+              <p>
+                English, Simplified Chinese, Russian, Spanish (Spain), Portuguese (Brazil), German,
+                Japanese, French, Polish, Korean, Traditional Chinese, Turkish, Thai, Spanish (Latin
+                America), and Ukrainian.
+              </p>
+            </details>
+          </section>
+          <section id="accessibility">
+            <h2>Accessibility</h2>
+            <p>
+              Open the separate <b>Settings → Accessibility</b> tab. Changes apply immediately and
+              are remembered.
+            </p>
+            <ul class="feature-list">
+              <li><b>Interface size:</b> 100%, 110%, or 125% for larger text and controls.</li>
+              <li><b>Stronger contrast:</b> clearer text and borders.</li>
+              <li><b>Reduce motion:</b> fewer animations and still-image hover previews.</li>
+              <li><b>Disable hover previews:</b> hide the library and timeline preview popups.</li>
+            </ul>
+            <p>
+              Use <kbd>Tab</kbd> and <kbd>Shift</kbd> + <kbd>Tab</kbd> to move through controls.
+              <kbd>Escape</kbd> closes Settings.
+            </p>
+          </section>
+          <section id="backup">
+            <h2>Back up and restore</h2>
+            <p>
+              In <b>Settings → General</b>, choose <b>Back up</b> to save your favorites,
+              descriptions, and tags as a JSON file. Use <b>Import</b> to restore it against the
+              recordings in your current library.
+            </p>
+            <div class="note">
+              <strong>Import replaces current annotations.</strong> ClipCabinet creates a safety
+              backup first. Metadata backups do not include videos; back up your recordings
+              separately.
+            </div>
+          </section>
+          <section id="steam">
+            <h2>Steam and privacy</h2>
+            <p>
+              <b>Settings → Steam</b> controls optional Steam Cloud annotation sync and friends-list
+              activity. Cloud sync covers tags, descriptions, and favorites; video files stay local.
+              Account and per-app Steam Cloud settings must also allow sync.
+            </p>
+            <p>
+              Each Steam account has its own annotations and saved recording folder. Restart
+              ClipCabinet after switching accounts. Local browsing, playback, and export work
+              without Steam running.
+            </p>
+            <p>
+              Friends-list activity is off by default. Enabling it shares a general organizing or
+              exporting status, without clip names, recording paths, or annotation text.
+            </p>
+          </section>
+        }
+        @case ('faq') {
+          @for (group of faqGroups; track group.id) {
+            <section [id]="group.id" class="faq-group">
+              <h2>{{ group.title }}</h2>
+              @for (item of group.items; track item.question) {
+                <details class="faq-item">
+                  <summary>
+                    <span>{{ item.question }}</span
+                    ><span class="faq-plus" aria-hidden="true">+</span>
+                  </summary>
+                  <p>{{ item.answer }}</p>
+                </details>
+              }
+            </section>
+          }
+          <div class="note">
+            Still need a hand?
+            <a href="mailto:contact@slapcraftgames.com">Contact Slapcraft Games</a>.
+          </div>
+        }
+      }
+      <footer class="article-footer">
+        <span>ClipCabinet 1.9.1 · Slapcraft Games</span
+        ><span>Screenshots show a House of Pips sample library.</span>
+      </footer>
+    </main>
+    <nav class="page-outline" aria-label="On this page">
+      <p>ON THIS PAGE</p>
+      @for (section of page().sections; track section.id) {
+        <a [routerLink]="pageUrl(page().slug)" [fragment]="section.id">{{ section.label }}</a>
+      }
+    </nav>
+  </div>
+  <dialog
+    #imageDialog
+    class="image-dialog"
+    aria-labelledby="image-caption"
+    (click)="closeBackdrop($event)"
+    (close)="enlargedImage.set(null)"
+  >
+    @if (enlargedImage(); as image) {
+      <div class="dialog-heading">
+        <p id="image-caption">{{ image.caption }}</p>
+        <button autofocus type="button" (click)="closeImage()">
+          Close <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <img [src]="assets + image.file" [alt]="image.caption" width="1920" height="1080" />
+      <a [href]="assets + image.file" target="_blank" rel="noopener noreferrer"
+        >Open the full-size image <span aria-hidden="true">↗</span></a
+      >
+    }
+  </dialog>
+</div>

@@ -35,3 +35,8 @@ $game-font: 'PressStart2P-Regular';
 body {
   font-family: $game-font, sans-serif;
 }
+
+body.clipcabinet-wiki-page {
+  margin: 0;
+  background: #0e1219;
+}

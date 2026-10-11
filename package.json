@@ -4,12 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node clipcabinet-wiki/build-entrypoints.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "wiki": "python hop-wiki/build.py",
     "wiki:serve": "python hop-wiki/build.py && ng serve",
-    "deploy": "ng deploy --base-href=\"https://slapcraftgames.com\" --cname=\"slapcraftgames.com\""
+    "deploy": "npm run build && ng deploy --no-build --cname=\"slapcraftgames.com\""
   },
   "private": true,
   "packageManager": "npm@11.19.0",
