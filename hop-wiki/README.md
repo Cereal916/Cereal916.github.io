@@ -19,13 +19,18 @@ rebuild.
   the hidden Spoilers page and the catalogue entries only it uses. The build
   uses them when the folder is present and works without it. Keep a backup of
   this folder somewhere private; git does not track it.
+  Keep review pictures under `private/img/` and detailed review history in
+  `private/CHANGELOG.md`. Never put them under `public/`: Angular publishes
+  every file there, including pictures no page links to.
 - `content/catalogue/*.md`: one `## <id>` section of notes per perk, supply
   and skill, plus the intro for each list page.
 - `content/screenshots.tsv`: the screenshots pages may show, with captions.
 - `public/hop/wiki-data/img/`: every picture (catalogue icons and cards under
-  their folders, screenshots under `screens/`). Add a new picture here.
+  their folders, screenshots under `screens/`). The image root contains only
+  folders; loose files fail the wiki build.
 - `build.py`: the builder (Python 3 standard library only).
-- `CHANGELOG.md`: wiki changes waiting for the next game release.
+- `CHANGELOG.md`: public wiki changes waiting for the next game release.
+  Keep story details in the private changelog.
 
 ## Writing pages
 

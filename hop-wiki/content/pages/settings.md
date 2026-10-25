@@ -17,7 +17,7 @@ Changes save automatically. Settings has four tabs: **General**,
 
 - **Language**: Auto (follows your Steam language), English, 简体中文,
   Русский, Español (España), Português (Brasil), Italiano,
-  Español (Latinoamérica) or 日本語.
+  Español (Latinoamérica), 日本語, Deutsch, Français, Polski, 한국어, 繁體中文 or Türkçe.
 - **Display mode**: Fullscreen or Windowed.
 - **Sound effects** and **Music** volume.
 - **Music order**: play your selected song or shuffle, plus a **Next song**
@@ -25,6 +25,10 @@ Changes save automatically. Settings has four tabs: **General**,
 - **Anonymous error reports**: choose whether the game may send bug reports.
   The first-launch prompt explains what is included and what is excluded. You
   can change your answer here at any time.
+
+The wiki uses English catalogue names. In another game language, the rarity,
+icon and skill-tree tab help you identify the same entry. Changing language
+keeps your unlocks, perk effects and match rules.
 
 {{shot:error-report-consent}}
 

@@ -2,7 +2,7 @@
 title: Career, XP and Bone Bucks
 section: Progression
 order: 10
-description: How House of Pips career progression works: XP and levels, skill points, respecs, Prestige, Bone Bucks, unlocking perks and legendary trials.
+description: How House of Pips career progression works: XP and levels, skill points, respecs, Rank Up, Bone Bucks, unlocking perks and legendary trials.
 ---
 
 # Career, XP and Bone Bucks
@@ -13,7 +13,7 @@ top-left of most screens shows your rank, level, XP bar and Bone Bucks.
 
 ## XP and levels
 
-You earn career XP from every match:
+In solo matches, you earn career XP from:
 
 | Source | XP |
 |---|---|
@@ -22,11 +22,20 @@ You earn career XP from every match:
 | Completing a match | {{n:career.xp.matchComplete}} |
 | Winning a match | {{n:career.xp.matchWin}} more |
 
+Multiplayer XP also counts toward your career: a win grants
+{{n:career.multiplayerXp.win}} XP and a loss grants
+{{n:career.multiplayerXp.loss}} XP to both your online and career progression.
+Interrupted matches grant {{n:career.multiplayerXp.interrupted}} XP. Career
+levels earned online give the usual skill points and Slap Track progress.
+Previously earned online XP is credited to your career once when you launch
+with Steam or open Multiplayer.
+
 - The XP needed for the next level starts at {{n:career.xpCurveBase}} and grows
   by {{n:career.xpCurveGrowth}} each level. Reaching the level cap of
   {{n:career.levelCap}} takes {{n:career.totalXp}} XP in total.
-- **Quick Study** boosts add 25%, and each Prestige rank adds
-  {{n:career.prestigeXpPercent}}% more.
+- **Quick Study** boosts add 25% in solo matches. Each rank up adds
+  {{n:career.prestigeXpPercent}}% to career XP earned in solo or multiplayer
+  matches; this bonus does not increase online XP.
 - Forfeited matches don't pay the completion bonus, and puzzles don't award
   XP.
 
@@ -58,7 +67,7 @@ Boxes and more. Every hand pays out, win or lose:
 | Winning the match | {{n:economy.matchRewards.matchWin}} more |
 
 - **Golden Ledger** boosts add 50%.
-- Each Prestige adds {{n:career.prestigeBucksPercent}}% to Bone Bucks earned
+- Each rank up adds {{n:career.prestigeBucksPercent}}% to Bone Bucks earned
   from play. The shares add up to 5%, 10%, 15% and 20% at Ranks 2–5,
   apply after other income bonuses, and have their own receipt line.
   Shop refunds and Slap Track redemptions keep their listed values.
@@ -70,6 +79,10 @@ Boxes and more. Every hand pays out, win or lose:
 
 Drafts only offer perks you have **unlocked** in the **Perks** compendium. A
 new career starts with {{perk:doubles}}, {{perk:blank}} and {{perk:chain}}.
+
+With a controller, scroll through the compendium using the bumpers or the
+D-pad at the edge of the visible cards. The **Select** and **Back** prompts
+stay in their own band beneath the cards.
 
 {{shot:perks-compendium}}
 
@@ -85,14 +98,14 @@ new career starts with {{perk:doubles}}, {{perk:blank}} and {{perk:chain}}.
 {{legendary-trials}}
 
 - Maluses can't be bought. They are always in the draft pool.
-- Unlocking is permanent; Prestige does not take unlocked perks away.
+- Unlocking is permanent; Rank Up does not take unlocked perks away.
 
-## Prestige
+## Rank Up
 
-Once you reach the level cap and the game offers it, you can **Prestige** to
-start your career climb again with permanent bonuses. Each Prestige:
+Once you reach the level cap and the game offers it, you can **Rank Up** to
+start your career climb again with permanent bonuses. Each rank up:
 
-- Adds {{n:career.prestigeBonusPoints}} bonus skill points per Prestige rank
+- Adds {{n:career.prestigeBonusPoints}} bonus skill points per rank up
   (they add up across ranks).
 - Adds {{n:career.prestigeXpPercent}}% to all the XP you earn, per rank.
 - Adds {{n:career.prestigeBucksPercent}}% to the Bone Bucks you earn from
@@ -100,15 +113,17 @@ start your career climb again with permanent bonuses. Each Prestige:
 - Adds one extra perk card to your drafts (not in All In).
 - Puts new cosmetics on the Slap Track.
 
-Prestiging resets your level and XP, skills, Bone Bucks, supplies, queued
+Ranking up resets your level and XP, skills, Bone Bucks, supplies, queued
 boosts, Bone Boxes and Slap Track claims. Unlocked perks, cosmetics, records
 and achievement progress all stay. Your rank can go up to 5.
+Reaching Ranks 3, 4 and 5 each earns a permanent achievement. See
+{{page:achievements}}.
 
-When Prestige is ready, the main menu's bottom help box says
-**“Prestige to progress in the story”** unless another useful tooltip is
-showing. After the ceremony, a short story conversation points you toward
-your next career climb. **Continue** finishes a speaking line first; the
-next press returns to the menu.
+When Rank Up is ready, the main menu's bottom help box says
+**“Rank up to progress in the story”** unless another useful tooltip is
+showing. After the ceremony, a short scene at the table points you toward
+your next career climb. It plays on by itself, and **Continue** returns to
+the menu when it ends. History's Cutscenes view can replay each rank's scene.
 
 {{shot:prestige-ready}}
 
@@ -118,3 +133,6 @@ next press returns to the menu.
 
 **Career** on the main menu shows your solo record, online record, playtime and
 match history.
+
+History’s Cutscenes view uses pages. Replay a seen scene without starting a
+match or earning rewards; History replays offer Skip.

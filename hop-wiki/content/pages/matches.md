@@ -7,10 +7,17 @@ description: How a House of Pips match runs from the hammer draw to the final ha
 
 # Matches, hands and drafts
 
-A **match** is one game against Rival, from the first hammer draw until
-someone reaches the target score. It is made of **hands** (the table also says
+A **match** is one game against Rival, from the first hammer draw until a
+hand ends with at least one player at the target score. It is made of **hands** (the table also says
 **rounds**; they are the same thing). Perks you draft last for the whole match
 and are gone when it ends.
+
+Your **Steam display name** labels your seat and appears in tutorial scores,
+cutscene speaker captions, turn and result announcements, and the Ledger.
+Names keep their spelling and case. If Steam cannot supply a name, the game
+shows **Player**. A long name may be shortened with dots to fit its label.
+
+{{shot:player-name-table}}
 
 ## How a match runs
 
@@ -23,10 +30,13 @@ and are gone when it ends.
    2. The **hand setup** screen offers optional pre-hand actions.
    3. Play the hand. See {{page:rules}}.
    4. Read the **hand summary** and receipts.
-   5. If you won, keep or pass the hammer. Then the drafts for the next hand
-      happen.
-4. **Match end.** The first player to reach the target while ahead wins. The
-   final summary shows your match rewards.
+   5. If the match continues and you won the hand, keep or pass the hammer.
+      Then the drafts for the next hand happen.
+4. **Match end.** Finish the current hand and its award. If either score is at
+   the target, the higher final score wins. A tie at or above the target goes
+   to the player who held the hammer for that hand, without another hand.
+   The final summary shows your match rewards and explains a hammer-decided
+   win or loss.
 
 ## Hand setup: optional actions before a hand
 
@@ -42,6 +52,11 @@ Before the first bone lands you can use:
 - {{supply:hammer_wax}}: improve the compensation draft if you win and pass
   the hammer.
 - {{supply:dealers_dare}}: stake a supply on winning this hand.
+- {{skill:crucible}} (skill): burn two perks of the same rarity for one random
+  perk a rarity higher. Once learned, use it as often as you have an eligible
+  pair, including before the same hand.
+
+{{shot:crucible}}
 
 Then choose **Begin hand**.
 
@@ -64,7 +79,7 @@ Perk drafts are where your build comes from.
 ### What a draft offers
 
 A standard draft shows **two perk cards and one Malus card**. You take **one**
-card. Each Prestige rank adds one more perk card to your drafts (not in All
+card. Each rank up adds one more perk card to your drafts (not in All
 In). Perk cards only come from perks you have unlocked in the Perks
 compendium; the Malus card can be any malus.
 

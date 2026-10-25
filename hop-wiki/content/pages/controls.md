@@ -56,10 +56,31 @@ required rotation. {{perk:pip_nudge}} keeps its **+1** or **−1** cue.
 
 - Xbox, PlayStation and Nintendo Switch style controllers and the Steam Deck
   are supported. Button prompts show the right symbols for your controller.
+- A button prompt that cannot do anything right now is grayed out. While you
+  hold a bone, **Place** grays out whenever the bone does not fit the end you
+  are aiming at as it is turned.
 - Controls go through **Steam Input**, so you can remap them in Steam. Open
   **Settings > Accessibility > Edit in Steam**. Remapped buttons show their new
   prompts in the game.
 - Menus, matches and Nana's tutorial all work with a controller.
+- Standalone controller hints have dark bordered panels so their symbols and
+  labels stay readable over the table artwork.
+- By default, PlayStation **Cross** or Xbox/Steam Deck **A** confirms the
+  focused choice; **Circle** or **B** goes back or cancels. Page arrows use
+  **L1/R1** or **LB/RB**; those buttons switch tabs in the skill tree.
+- Cutscene **Pause/Resume** uses **Triangle/Y**. Once the scene has finished,
+  its **Continue** prompt uses **Cross/A**.
+- During the opponent's turn you can inspect your rack. **Select** dims
+  while the focused bone cannot be played.
+
+- A committed boneyard draw must finish before you can return to your rack.
+  **Rack locked** and its Back prompt are dimmed during the choice; choice
+  prompts disappear while the bones slide into your hand.
+
+- During a committed perk burn and reveal, **Cross/A** speeds it up. Return
+  to supplies after the result settles.
+
+{{shot:controller-shortcuts}}
 
 ## Steam Deck
 

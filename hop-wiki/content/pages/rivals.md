@@ -12,6 +12,9 @@ and maluses from the same cards you do, and his perks have the same effects as
 yours. When Rival uses a perk, the table pauses on a
 notice so you can see what happened; the ledger records it too.
 
+His expressive portrait uses the same resting and speaking poses at the table
+and in Rival School. His mouth follows the dialogue as it appears.
+
 ## Skill levels
 
 Rival sits down at one of three skill levels. In Custom mode you choose the

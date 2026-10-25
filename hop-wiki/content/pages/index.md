@@ -41,7 +41,7 @@ with the same names, rarities and numbers you see on screen.
   summary.
 - {{page:modes}}: Classic Table, Old School, All In, Custom and the rest.
 - {{page:rivals}}: who you're playing against, and Rival School.
-- {{page:career}}: XP, levels, skill points, Prestige and Bone Bucks.
+- {{page:career}}: XP, levels, skill points, Rank Up and Bone Bucks.
 - {{page:collections}}: the Supply Shop, Bone Boxes, cosmetics and the Slap
   Track.
 - {{page:online}}: playing a friend or a stranger through Steam.

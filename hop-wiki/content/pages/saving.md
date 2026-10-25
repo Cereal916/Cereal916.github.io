@@ -47,6 +47,10 @@ round?** Choose **Keep playing** to back out with the table exactly as it was.
 
 ## Steam Cloud
 
+The demo saves its career and unfinished match on this device, separately from
+the full game. It does not use Steam Cloud or show the Cloud status button.
+
+
 With Steam Cloud on, your career, unlocks, cosmetics, achievement progress,
 online skill build and saved solo match follow you to other computers and
 Steam Deck. Display, audio and controller settings stay on each device.
@@ -56,13 +60,15 @@ Steam Deck. Display, audio and controller settings stay on each device.
 - Let Steam finish syncing before you switch computers.
 - If the two copies disagree, the game asks you to **choose which progress to
   keep**: **Keep this device**, **Use Steam Cloud**, or **Decide later** and
-  keep playing on this device. Each card shows its level, Prestige rank,
+  keep playing on this device. Each card shows its level, completed rank ups,
   wins and losses, playtime, last played date and saved match, so you can tell
   them apart.
 - The copy you choose **replaces the other one**, and that can't be undone.
   Read both cards before you choose.
 - The **Steam Cloud** button in the Settings header shows the current sync
   status.
+
+{{shot:cloud-conflict}}
 
 ## Clean Slate
 

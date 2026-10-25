@@ -7,8 +7,9 @@ main-menu-continue	With a saved match, **CONTINUE** takes you straight back to t
 table	A hand in progress: your rack at the bottom, Rival's face-down rack at the top, scores and perks along the sides.
 table-high-contrast	The same table with **High contrast** and **Large text** switched on.
 table-targets	Picking up a bone shows its landing previews; the side column holds the shared forecast caption and armed perk status.
-boneyard	Drawing from the boneyard: you choose which face-down bone to take.
+boneyard	Boneyard Lantern (Uncommon) reveals one fixed bone during the draw choice. You can take it or choose another bone; its source label stays inside the bordered card.
 hand-setup	The hand setup screen before each hand, where pre-hand supplies and Last Call are used.
+crucible	The **Crucible** skill: two Uncommon perks chosen to burn into one random Rare perk. Hover any perk to read it.
 ledger	The match ledger lists every play, bonus, malus and perk use.
 draft	A perk draft. The red card is the Malus. **Reroll** and **Save** come from skills; **Take & Redraw** is the Malus bargain.
 hand-win	The hand summary after a won hand.
@@ -28,16 +29,20 @@ custom-mode	Custom mode: build your own table rules.
 puzzles	The puzzle list.
 puzzle-board	A puzzle in progress: a fixed hand, a fixed board and a goal.
 tutorial-menu	The Tutorials menu: Nana's lesson and Rival School.
-tutorial-lesson	Nana explaining spinners in her tutorial.
+tutorial-lesson	Nana explaining spinners, with Continue glowing when the lesson is ready.
+tutorial-practice	Nana highlights the bone to pick up; the placement target appears after pickup.
+tutorial-boneyard	Boneyard glows gold when Nana is ready for you to draw.
+tutorial-draw-result	The bone you drew stays face up beside Nana while she explains why the turn passes.
+tutorial-sendoff	Nana invites you to a quick Old School game to 75 points before Finish starts it.
 rival-school	Rival School: one lesson for each of Rival's table styles.
 multiplayer-entry	Choosing how to play online.
 multiplayer-lobby	A private lobby with a friend.
 multiplayer-standings	Online standings and leaderboards.
 settings-general	Settings, General tab.
 settings-animation	Settings, Animation tab.
-achievements	The achievements gallery.
-prestige-ready	When Prestige is ready, the idle menu help box points to the next story step.
-prestige-confirm	Prestige shows the next rank's skill points, XP and Bone Bucks bonuses before you confirm.
+achievements	The lower achievement groups: career and Rank Up milestones in ascending order, followed by hidden badges. Scroll to see all 21 achievements.
+prestige-ready	When Rank Up is ready, the idle menu help box points to the next story step.
+prestige-confirm	Rank Up shows the next rank's skill points, XP and Bone Bucks bonuses before you confirm.
 multiplayer-invitation	An invitation: see your friend and the local sent time in AM/PM, then join, decline, or decide later.
 multiplayer-required-draw	Online: Stumble draws automatically before your play and names the Malus causing the draw.
 multiplayer-committed-bone	Online: play the exposed bone after confirming Pip Shift (Rare) or Pip Shuffle (Epic).
@@ -48,3 +53,8 @@ pip-forecast	Compact projected-total numbers sit beside the landing previews, wi
 score-ends	Online scoring: only the outer 4 and 1 fly toward the five-point total; the spinner's bare short sides show no counts.
 score-eraser	Solo and online counts use the same Pip Eraser deduction: an exposed double-six contributes 11, plus 4 for a base score of 15.
 score-forecast-eraser	The compact forecast and pink scoring highlight include the armed Pip Eraser reduction when its targeted end stays open.
+cloud-conflict	The Steam Cloud comparison shows each save’s level and completed rank ups before you choose which progress to keep.
+controller-shortcuts	Controller shortcuts sit in dark bordered panels, clear of the turn message.
+match-tie	Equal final scores: your hammer wins the match, and the match story explains the result.
+match-tie-online	A hammer-decided online result keeps the hand award with its winner and leaves the portrait mutes clear of the match actions.
+player-name-table	Your Steam display name labels your score and turn. This review uses the sample name DominoFan.

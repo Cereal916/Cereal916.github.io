@@ -97,6 +97,11 @@ You may only draw when **you have no legal play**.
 - The boneyard can be drawn completely empty.
 - When the boneyard is empty and you can't play, you **pass**.
 
+{{perk:boneyard_peek}} reveals one fixed bone **during your boneyard choice**.
+It does not show a next-bone hint on the main table. You may choose the
+revealed bone or any other available bone. Its source label sits in the
+same bordered card as the revealed bone.
+
 {{shot:boneyard}}
 
 ## Ending a hand
@@ -121,7 +126,18 @@ Several perks change this award, such as {{perk:soft_landing}},
 
 ## Winning the match
 
-The first player to reach the mode's **target score** while **ahead** wins the
-match. If both players are tied at or above the target, play continues until
-one of them leads. Classic Table plays to 150; see {{page:modes}} for the
-others.
+After the hand's award, if either player is at or above the mode's **target
+score**, the higher final score wins the match. If both final scores are tied
+at or above the target, **whoever held the hammer for that hand wins**. The
+scores stay tied and no extra hand is played. The win or loss announcement
+explains that the hammer decided the match. Classic Table plays to 150; see
+{{page:modes}} for the others.
+
+{{shot:match-tie}}
+
+Reaching the target does not stop the hand: it is played out, and the match is
+decided when it ends. The leading score charges up and fires a burst of magic
+at the target line, which knocks it into the middle of the table to announce
+the final hand: **Finish the Hand**. From then on the leading score glows green and the trailing
+score pulses red. Online matches end the hand the moment someone reaches the
+target, so they have no final hand.

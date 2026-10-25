@@ -139,6 +139,27 @@ first card of your next eligible draft.
   not the Malus, and not Take all.
 - Legendary Table drafts never bring a reserved card back.
 
+## crucible
+
+On the hand setup screen, **burn two perks of the same rarity for one random
+perk a rarity higher**. Two Commons become an Uncommon, two Uncommons a Rare,
+and so on up to Legendary.
+
+- One skill point unlocks unlimited uses. Return to hand setup after each
+  exchange and use Crucible again whenever you have another eligible pair,
+  including before the same hand. Points spent on the former extra ranks are
+  returned to your available skill points.
+- The Crucible shows every perk you hold. Hover any of them to read its
+  description and whether it can burn. Perks that can't pair are grayed out,
+  and once you choose the first perk, every other rarity grays out too.
+- Legendary perks can't burn, and nor can maluses or the temporary copies
+  {{skill:fate_echo}} makes. A Legendary result is drawn only from Legendary
+  perks you have unlocked.
+- The two perks burn away from the bottom up, and the new one appears with
+  your draft reveal style, already taken. It counts as a new perk, so
+  {{skill:fate_echo}} can copy it.
+- Single-player only: the online skill build can't rank it.
+
 ## coffin_corner
 
 A scoring play that **fills the fourth and last side of a spinner** gains **+10

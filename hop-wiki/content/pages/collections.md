@@ -53,7 +53,7 @@ screen.
 - A supply or Bone Box you can't hold any more pays its full Bone Bucks price
   instead.
 - A cosmetic you already own is replaced by a {{supply:dealers_dare}}.
-- After a Prestige the track starts again: levels 10 and 30 give a free skill
+- After ranking up the track starts again: levels 10 and 30 give a free skill
   respec, and the cosmetic levels hold new cosmetics.
 
 ## Cosmetics
@@ -74,10 +74,10 @@ them from **Cosmetics** on the main menu.
   - **Seasonal skins** unlock for good when you open the game in their month:
     Valentine Heart in February, Halloween Night in October and Silver and
     Gold in December.
-  - Pride skins come from the Slap Track after Prestige.
+  - Pride skins come from the Slap Track after ranking up.
   - The Country Flag collection is a separate add-on.
 - **Background music**: songs for the table. The House Theme is the default;
-  more songs come from the Slap Track and Prestige. Settings has a shuffle
+  more songs come from the Slap Track and Rank Up. Settings has a shuffle
   option.
 - **Avatars**: your player portrait, chosen from **Choose your avatar** on the
   main menu. More portraits come from the Slap Track, puzzle sets and online

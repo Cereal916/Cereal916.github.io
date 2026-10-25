@@ -131,8 +131,10 @@ Every time you go to the boneyard, **one face-down bone in the boneyard is
 turned face-up for you** before you choose. You still pick which bone to take,
 so you can take the revealed one or avoid it.
 
-- The revealed bone is the next bone in the boneyard's fixed order, so it is
-  shown again on later visits until someone takes it.
+- The reveal appears **only while choosing in the boneyard**. The main
+  table does not tell you a hidden bone's values before you draw.
+- The same fixed bone is revealed again on later visits until someone
+  takes it.
 - Extra copies do not reveal more bones.
 - This is a passive perk. It is a different thing from the
   {{supply:boneyard_lantern}} supply, which lights up one random bone for a

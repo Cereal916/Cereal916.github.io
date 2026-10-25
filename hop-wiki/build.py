@@ -1211,6 +1211,16 @@ class Site:
         return self.verify()
 
 
+def verify_public_picture_layout(pictures: Path) -> None:
+    loose = sorted(path.name for path in pictures.iterdir() if path.is_file())
+    if loose:
+        fail(
+            "public wiki image root must contain only folders; put public pictures in "
+            "catalogue folders or screens/ and private reviews in hop-wiki/private/img/: "
+            + ", ".join(loose)
+        )
+
+
 def safe_output(path: Path) -> Path:
     """Build folders are deleted and rebuilt, so they must sit inside the
     gitignored hop-wiki/.build/ folder."""
@@ -1227,6 +1237,7 @@ def main(argv: list[str]) -> int:
     parser.add_argument("--steam-out", type=Path, default=DEFAULT_STEAM_OUT, help="Steam guide draft folder under hop-wiki/.build/")
     arguments = parser.parse_args(argv)
     try:
+        verify_public_picture_layout(PICTURES)
         if not arguments.catalogue.is_file():
             fail(f"missing catalogue snapshot {arguments.catalogue}")
         data = json.loads(arguments.catalogue.read_text(encoding="utf-8"))

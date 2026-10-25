@@ -76,6 +76,8 @@ Online matches give both players **equal loadouts** instead of your career:
 - **Other modes**: both players play at level 30 with a separate online skill
   build and starting supplies you choose. Use **Build skill loadout** and
   **Choose starting supplies**. Your single-player skills are not affected.
+  {{skill:crucible}} works only in single-player matches, so it stays locked
+  in the online build.
 - **Max skills** gives both players every skill at its maximum rank and full
   perk access, first to 250.
 
@@ -118,6 +120,18 @@ rotate it and choose a matching open end.
 If a choice is unavailable, an explanation appears on the table. You can make
 another valid choice and carry on with the same match.
 
+## Finishing the match
+
+Online hands end as soon as a player reaches the target. If the final scores
+are tied at or above the target, the player who held the hammer for that hand
+wins the match. The win or loss announcement explains why; the final hand's
+award still belongs to the player who earned it.
+
+The portrait mute buttons sit clear of **Play again**, **Return to setup** and
+**Block opponent** on the result screen.
+
+{{shot:match-tie-online}}
+
 ## Clocks
 
 - Each **turn** has a **60-second** clock. If it runs out, the player who ran
@@ -144,10 +158,16 @@ finished matches.
 - Wins raise your rank; losses and connection losses lower it. Matchmaking
   prefers opponents of a similar rank. Rank tiers run from Boneyard through
   Ivory, Brass and Gold to Delirium.
-- Your **online level** only goes up: a win earns more online XP than a loss,
-  and interrupted matches earn none.
-- Online rewards are **cosmetic only**: tile backs, edge finishes, placement
-  effects and badges such as First Table, Ten Wins and Comeback.
+- Your **online level** only goes up: a win earns
+  {{n:career.multiplayerXp.win}} XP and a loss earns
+  {{n:career.multiplayerXp.loss}} XP. Interrupted matches earn none.
+- The same XP advances your {{page:career}}, earning career levels, skill
+  points and Slap Track progress. Your career's rank bonus applies to
+  its share; online XP keeps the rates above. Previously earned online XP is
+  also credited to your career once.
+- Rewards unlocked by online rank and level are **cosmetic only**: tile backs,
+  edge finishes, placement effects and badges such as First Table, Ten Wins
+  and Comeback.
 - Finishing an online match earns the **Across the Table** achievement.
 
 ## Standings and history
