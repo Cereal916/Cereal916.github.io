@@ -3,7 +3,7 @@ import { RouterLink } from '@angular/router';
 import { SocialLinks } from '../social-links/social-links';
 
 export const HOP_DEMO_URL =
-  'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/';
+  'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/?utm_source=slapcraftgames.com&utm_medium=referral&utm_campaign=house_of_pips';
 export const HOP_PLAYLIST_URL =
   'https://www.youtube.com/watch?v=fOqiFFHjgmo&list=PLaMPl9FW9Cug&pp=sAgC';
 

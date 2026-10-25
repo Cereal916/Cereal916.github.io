@@ -16,7 +16,7 @@ describe('SocialLinks', () => {
     expect(links.map((link) => link.getAttribute('href'))).toEqual([
       'https://www.youtube.com/@slapcraftgames',
       'https://www.instagram.com/slapcraftgames/',
-      'https://store.steampowered.com/developer/slapcraft?snr=1_5_9__2000',
+      'https://store.steampowered.com/developer/slapcraft?snr=1_5_9__2000&utm_source=slapcraftgames.com&utm_medium=referral&utm_campaign=slapcraft_games',
     ]);
     for (const link of links) {
       expect(link.target).toBe('_blank');

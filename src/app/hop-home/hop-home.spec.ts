@@ -12,7 +12,7 @@ describe('HopHome', () => {
       link.getAttribute('href'),
     );
     expect(hrefs).toEqual([
-      'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/',
+      'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/?utm_source=slapcraftgames.com&utm_medium=referral&utm_campaign=house_of_pips',
       '/hop/wiki',
     ]);
     expect(root.querySelector('iframe')?.getAttribute('src')).toBe(

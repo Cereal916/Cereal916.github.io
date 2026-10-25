@@ -89,6 +89,18 @@ npm run deploy
 - `clipcabinet-wiki/build-entrypoints.mjs` reads the same guide metadata as the
   Angular routes. Add new guides there through `clipcabinet-guides.ts`.
 
+## Steam referral tracking
+
+Every outbound Steam link uses `utm_source=slapcraftgames.com` and `utm_medium=referral`.
+Use `utm_campaign=house_of_pips` for House of Pips, `clipcabinet` for ClipCabinet,
+and `slapcraft_games` for the shared studio profile. Preserve existing query parameters.
+The demo URL is shared by the studio landing page and `/hop`; the Steam profile link
+is owned by `SocialLinks`. Keep the rendered-link tests in sync when changing them.
+
+[Steam UTM Analytics](https://partner.steamgames.com/doc/marketing/utm_analytics) reports
+app and sale-page traffic; developer profile links carry the tags but are not supported
+by that report.
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

@@ -26,7 +26,7 @@ describe('StudioLandingComponent', () => {
     const hrefs = (selector: string) =>
       Array.from(root.querySelectorAll(selector)).map((link) => link.getAttribute('href'));
     const demo =
-      'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/';
+      'https://store.steampowered.com/app/5319260/House_of_Pips_a_Domino_Roguelike_Demo/?utm_source=slapcraftgames.com&utm_medium=referral&utm_campaign=house_of_pips';
     expect(root.querySelector('.demo-announcement')?.textContent).toContain('demo is out now');
     expect(hrefs('.demo-announcement a')).toEqual([demo, '/hop']);
     expect(hrefs('.card-actions a')).toEqual([demo, '/hop', '/hop/wiki']);

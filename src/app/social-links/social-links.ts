@@ -53,7 +53,7 @@ import { Component } from '@angular/core';
       </li>
       <li>
         <a
-          href="https://store.steampowered.com/developer/slapcraft?snr=1_5_9__2000"
+          href="https://store.steampowered.com/developer/slapcraft?snr=1_5_9__2000&utm_source=slapcraftgames.com&utm_medium=referral&utm_campaign=slapcraft_games"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Slapcraft Games on Steam"
