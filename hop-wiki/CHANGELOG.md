@@ -6,7 +6,46 @@ the release ships.
 
 ## Unreleased
 
+- Adds Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Norwegian, Portuguese (Portugal), Romanian, Swedish and Ukrainian to the language settings, with twenty-seven supported languages.
+
+## 0.25.0-pre.21
+
+- Nana's tutorial has eighteen steps: the separate double lesson is gone, several of her lines are shorter, and the How to win card now stands beside her invitation to the Old School game. Refreshes the tutorial pictures.
+- Describes how Nana coaches her Old School game after the lesson: playable bones glow gold and the open-end total shows in the first hand, scoring bones glow pink until you have scored three times, and Nana names the best play. Adds the `tutorial-coached-game` picture.
+- Describes Nana's new scoring step (a total of 5, 10, 15, 20 and so on scores) and the counted equation every lesson score now plays. Adds the `tutorial-score-equation` picture and refreshes the tutorial pictures for the new lesson count.
+- Notes in Controls that the Steam Deck and other small screens draw the bones at the open ends larger, a spinner with an open side included, and that the train makes room for them.
+- Notes that Nana's tutorial lines are shorter and show the words to remember in gold; refreshes the tutorial pictures for the new lines.
+- Describes in Rules how long lines bend at the edge of the table and how the table keeps room for every play, rearranging its corners when a play would crowd it; notes that Branch Bank still counts a vertical branch however it bends; refreshes the table pictures, whose tall cross now bends. Notes that a bone always leaves a double straight, so a line turns only at a plain bone.
+
+## 0.25.0-pre.20
+
+- Describes the reworked Large and Extra large text sizes: Large lifts small labels to body-text size, and Extra large, the Steam Deck's starting size, enlarges body text too.
+- Notes that Nana's and Rival's long tutorial lines read in pages at the Extra large text size.
+- Refreshes the tutorial invitation picture: the tutorial header now names Nana's Old School game, first to 75.
+- Notes in Controls and Matches that a label or name shortened with dots shows its full text on hover.
+- Updates the guides for the less wordy screens: locked menu cards show a padlock (hover for why), Settings tabs read General, Motion, Access and Voice, achievements open their details from the card, puzzles show their goal on hover, supplies say when they are used on hover, and later Slap Track rewards show a padlock.
+- Describes the Pip Forecast colour legend: white is the open-end total, pink a total that scores.
+- Lists `Enter` and `Esc` for confirmations in Controls, now that dialogs no longer print their keys.
+- Notes in Controls that table perks show as icon buttons with their remaining uses, named on hover, that perks and supplies each list from the lowest rarity, and in Puzzles that the goal sits in a task panel with Levels, Undo and Retry on the right.
+- Notes in Puzzles that a solved puzzle shows a check mark and that the icons under a puzzle's title are its perks.
+- Notes in Career that History's Cutscenes view lists the story's scenes and shows an unseen one only as a padlock.
+- Refreshes the screenshots of screens re-spaced to use their room: the table, whose board now grows into free felt before it shrinks, puzzles, hand setup, Crucible, boneyard, hand summaries, Settings, Custom, inventory, online screens, Steam Cloud and tutorials.
+- Refreshes the screenshots of every screen that lost text: main menu, modes, Custom, Settings, skill tree, perk compendium, shop, inventory, cosmetics, Slap Track, achievements, puzzles, drafts, hand setup, Crucible, boneyard, table, ledger, hand summaries, tutorials and online screens.
+
+## 0.25.0-pre.19
+
+- Redraws the copper-haired glasses portrait with clean stepped outlines and cleans the jade-earring portrait's jaw contours; refreshes both starting-avatar picker pictures.
+
+- Rank Up dialogue stays visible until Continue on every line; updates the Career and Controls guidance.
+
+- Refreshes ten starting human portraits, keeps resting smiles open-eyed between brief blinks, and cleans their outlines. The glasses portrait wears a blue jacket and a plain ivory shirt without the brass button.
+- Removes portrait names, ages and biographies from avatar selection; dialogue identifies you by your Steam profile name.
+
+## 0.25.0-pre.18
+
 - Keeps private review notes and images out of public assets and release notes.
+- Documents the Extra large text size, separate sizes for the Steam Deck's screen and docked screens, and the one-time text size choice.
+- Refreshes the main menu and Perk compendium screenshots for the reworked Continue card, fuller player portraits and taller perk cards.
 
 ## 0.25.0-pre.17
 

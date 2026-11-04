@@ -27,6 +27,8 @@ pnpm-debug.log*
 !.env.example
 *.pem
 *.key
+# Tesla Fleet API public key: public by design, served at /.well-known/appspecific/
+!public/.well-known/appspecific/com.tesla.3p.public-key.pem
 
 # IDEs and editors (shared IntelliJ run configurations in .run/ are committed)
 .idea/

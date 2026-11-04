@@ -10,7 +10,8 @@ description: Your first hour of House of Pips: Nana's tutorial, the main menu, y
 ## 1. Take Nana's tutorial
 
 A brand-new career starts with most of the main menu locked: **Play**,
-**Puzzles** and **Multiplayer** all say "Finish Nana's tutorial first."
+**Puzzles** and **Multiplayer** show a padlock. Hover one to see that Nana's
+tutorial opens it.
 
 Open **Tutorials** and play **Nana's tutorial**. In a few minutes she teaches
 the whole table, from pips and the hammer to scoring, the boneyard and winning
@@ -19,7 +20,9 @@ a hand.
 {{shot:tutorial-lesson}}
 
 Finishing it unlocks the rest of the menu, and Nana invites you straight into
-a short Old School game against her (first to 75). Completing that match,
+a short Old School game against her (first to 75). She coaches you through
+it: in the first hand playable bones glow gold, and until you have scored
+three times the bones that would score glow pink. Completing that match,
 win or lose, unlocks **Old School**. **Classic Table** stays selected for your
 next game; choose Old School from **Modes** whenever you want to play it.
 See {{page:tutorials}} for both tutorials.

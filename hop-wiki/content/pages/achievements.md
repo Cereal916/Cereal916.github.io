@@ -35,8 +35,8 @@ Rank Up earns nothing; completing it earns the badge once the new rank is saved.
 
 ## Checklists
 
-Several achievements track a checklist. Open an achievement's **Details** to
-see which entries you still need:
+Several achievements track a checklist. Select an achievement to open its
+details and see which entries you still need:
 
 - **Well Supplied**: use each supply at least once. Buying it doesn't count.
 - **Every Trick in the Book**: put every positive perk to use in a match.
@@ -48,7 +48,7 @@ see which entries you still need:
 ## Progress and Steam
 
 - Achievement progress is a lifetime record: it carries across rank ups.
-- With Steam running, earned achievements also unlock on Steam, and the
-  gallery shows how many players have earned each one.
+- With Steam running, earned achievements also unlock on Steam, and once
+  Steam reports it the gallery shows how many players have earned each one.
 - **Clean Slate** clears local achievement progress, but achievements already
   unlocked on Steam stay there.

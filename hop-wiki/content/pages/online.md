@@ -183,7 +183,7 @@ finished matches.
 
 ## Voice chat
 
-Private lobbies include voice chat. The **Voice chat** tab in Settings sets
+Private lobbies include voice chat. The **Voice** tab in Settings sets
 the chat volume, whether your microphone and your opponent's voice start live
 or muted, a voice style, and your speaker and microphone devices. See
 {{page:settings}}.

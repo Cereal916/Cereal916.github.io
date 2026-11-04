@@ -22,7 +22,8 @@ supply is described on the [Supplies](supplies.html) page.
 The **Inventory** holds what you own:
 
 - **Supplies.** Table supplies are used from the match itself; XP and Bone
-  Bucks boosts are activated here between matches.
+  Bucks boosts are activated here between matches. Hover a supply to see when
+  it can be used.
 - **Bone Boxes**, ready to open.
 
 You can sort the Inventory by ownership, value, rarity, name or count.
@@ -48,7 +49,8 @@ items.
 
 The **Slap Track** has one reward for each career level, up to level 30:
 supplies, Bone Boxes and cosmetics. Claim them in order from the Slap Track
-screen.
+screen; a reward you can't claim yet shows a padlock until the earlier
+levels are claimed.
 
 - A supply or Bone Box you can't hold any more pays its full Bone Bucks price
   instead.
@@ -82,6 +84,17 @@ them from **Cosmetics** on the main menu.
 - **Avatars**: your player portrait, chosen from **Choose your avatar** on the
   main menu. More portraits come from the Slap Track, puzzle sets and online
   play.
+
+Your portrait represents you. Dialogue uses your current Steam profile name.
+
+The twenty human portraits are available from the start. Resting smiles keep
+their eyes open between brief blinks, and the smile or speaking mouth stays
+in place while the eyes blink. Portraits use crisp pixel art with clean,
+stepped transparent outlines.
+
+{{shot:avatar-picker}}
+
+{{shot:avatar-picker-humans-2}}
 
 Online play has its own cosmetic rewards: tile backs, edge finishes,
 placement effects and badges. See {{page:online}}.

@@ -119,11 +119,11 @@ and achievement progress all stay. Your rank can go up to 5.
 Reaching Ranks 3, 4 and 5 each earns a permanent achievement. See
 {{page:achievements}}.
 
-When Rank Up is ready, the main menu's bottom help box says
-**“Rank up to progress in the story”** unless another useful tooltip is
-showing. After the ceremony, a short scene at the table points you toward
-your next career climb. It plays on by itself, and **Continue** returns to
-the menu when it ends. History's Cutscenes view can replay each rank's scene.
+When Rank Up is ready, the **RANK UP** button pulses; hover it to read
+**“Rank up to progress in the story”**. After the ceremony, a short scene at the table points you toward
+your next career climb. Each line stays on screen until you press **Continue**. If the words are
+still appearing, the first press reveals the complete line; the next advances
+it. After the last line, the scene finishes and returns to the menu. History's Cutscenes view can replay each rank's scene.
 
 {{shot:prestige-ready}}
 
@@ -134,5 +134,6 @@ the menu when it ends. History's Cutscenes view can replay each rank's scene.
 **Career** on the main menu shows your solo record, online record, playtime and
 match history.
 
-History’s Cutscenes view uses pages. Replay a seen scene without starting a
-match or earning rewards; History replays offer Skip.
+History’s Cutscenes view uses pages and lists the story's scenes. Replay a seen
+scene without starting a match or earning rewards; History replays offer Skip.
+A scene you haven't seen yet shows only a padlock.

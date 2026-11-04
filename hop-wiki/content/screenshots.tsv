@@ -6,7 +6,7 @@ main-menu	The main menu of a brand-new career. Nana's tutorial unlocks **Play**,
 main-menu-continue	With a saved match, **CONTINUE** takes you straight back to the table.
 table	A hand in progress: your rack at the bottom, Rival's face-down rack at the top, scores and perks along the sides.
 table-high-contrast	The same table with **High contrast** and **Large text** switched on.
-table-targets	Picking up a bone shows its landing previews; the side column holds the shared forecast caption and armed perk status.
+table-targets	Picking up a bone shows its landing previews; the side column holds the forecast colour legend and armed perk status.
 boneyard	Boneyard Lantern (Uncommon) reveals one fixed bone during the draw choice. You can take it or choose another bone; its source label stays inside the bordered card.
 hand-setup	The hand setup screen before each hand, where pre-hand supplies and Last Call are used.
 crucible	The **Crucible** skill: two Uncommon perks chosen to burn into one random Rare perk. Hover any perk to read it.
@@ -31,9 +31,11 @@ puzzle-board	A puzzle in progress: a fixed hand, a fixed board and a goal.
 tutorial-menu	The Tutorials menu: Nana's lesson and Rival School.
 tutorial-lesson	Nana explaining spinners, with Continue glowing when the lesson is ready.
 tutorial-practice	Nana highlights the bone to pick up; the placement target appears after pickup.
+tutorial-score-equation	Every score in Nana's lesson is counted out: the open ends add up to 1 + 4 + 4 + 1 = 10, a multiple of five.
 tutorial-boneyard	Boneyard glows gold when Nana is ready for you to draw.
 tutorial-draw-result	The bone you drew stays face up beside Nana while she explains why the turn passes.
-tutorial-sendoff	Nana invites you to a quick Old School game to 75 points before Finish starts it.
+tutorial-sendoff	Nana invites you to a quick Old School game to 75 points, with How to win beside her, before Finish starts it.
+tutorial-coached-game	In Nana's first game, playable bones glow gold, bones that would score glow pink, and Nana names the best play.
 rival-school	Rival School: one lesson for each of Rival's table styles.
 multiplayer-entry	Choosing how to play online.
 multiplayer-lobby	A private lobby with a friend.
@@ -41,7 +43,7 @@ multiplayer-standings	Online standings and leaderboards.
 settings-general	Settings, General tab.
 settings-animation	Settings, Animation tab.
 achievements	The lower achievement groups: career and Rank Up milestones in ascending order, followed by hidden badges. Scroll to see all 21 achievements.
-prestige-ready	When Rank Up is ready, the idle menu help box points to the next story step.
+prestige-ready	When Rank Up is ready, the RANK UP button pulses and its help points to the next story step.
 prestige-confirm	Rank Up shows the next rank's skill points, XP and Bone Bucks bonuses before you confirm.
 multiplayer-invitation	An invitation: see your friend and the local sent time in AM/PM, then join, decline, or decide later.
 multiplayer-required-draw	Online: Stumble draws automatically before your play and names the Malus causing the draw.
@@ -49,7 +51,7 @@ multiplayer-committed-bone	Online: play the exposed bone after confirming Pip Sh
 multiplayer-hand-setup	Both players prepare their own items simultaneously, then confirm Ready.
 multiplayer-hand-setup-empty	No pre-hand items: click Continue to confirm you are ready.
 error-report-consent	First launch: choose whether anonymous bug reports may be sent; change your answer later in Settings.
-pip-forecast	Compact projected-total numbers sit beside the landing previews, with one shared caption and armed status.
+pip-forecast	Compact projected-total numbers sit beside the landing previews, with a colour legend and armed status in the side column.
 score-ends	Online scoring: only the outer 4 and 1 fly toward the five-point total; the spinner's bare short sides show no counts.
 score-eraser	Solo and online counts use the same Pip Eraser deduction: an exposed double-six contributes 11, plus 4 for a base score of 15.
 score-forecast-eraser	The compact forecast and pink scoring highlight include the armed Pip Eraser reduction when its targeted end stays open.
@@ -58,3 +60,5 @@ controller-shortcuts	Controller shortcuts sit in dark bordered panels, clear of 
 match-tie	Equal final scores: your hammer wins the match, and the match story explains the result.
 match-tie-online	A hammer-decided online result keeps the hand award with its winner and leaves the portrait mutes clear of the match actions.
 player-name-table	Your Steam display name labels your score and turn. This review uses the sample name DominoFan.
+avatar-picker	Choose a starting human portrait. Resting smiles keep their eyes open between short blinks.
+avatar-picker-humans-2	The second page of starting human portraits.

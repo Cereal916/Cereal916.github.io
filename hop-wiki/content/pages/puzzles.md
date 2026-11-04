@@ -19,6 +19,12 @@ play". There is no opponent and no boneyard, so every puzzle is pure planning.
 - There are **20 puzzles in four sets of five**.
 - The first five are open from the start. Every **four new solves** open the
   next five.
+- Hover a puzzle to read its goal. Locked sets show a padlock with the
+  number of solves they need.
+- A solved puzzle shows a check mark. Icons under a puzzle's title are the
+  perks it gives you; hover one to read it.
+- On the table, the goal and your progress sit in the task panel at the top
+  right, with **Levels**, **Undo** and **Retry** below it on the right.
 - You can try a puzzle as often as you like and replay solved ones.
 - Puzzles don't autosave: if you leave an unfinished puzzle, it starts over
   next time.

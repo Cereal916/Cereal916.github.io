@@ -2,14 +2,14 @@
 title: Settings and accessibility
 section: Options
 order: 10
-description: Every House of Pips settings tab: language, display, sound, animation, accessibility options such as colorblind mode, high contrast and large text, and voice chat.
+description: Every House of Pips settings tab: language, display, sound, animation, accessibility options such as colorblind mode, high contrast and text size, and voice chat.
 ---
 
 # Settings and accessibility
 
 Open **Settings** from the main menu or from the menu button during a match.
 Changes save automatically. Settings has four tabs: **General**,
-**Animation**, **Accessibility** and **Voice chat**.
+**Motion**, **Access** and **Voice**. Hover a setting to read what it does.
 
 {{shot:settings-general}}
 
@@ -17,7 +17,9 @@ Changes save automatically. Settings has four tabs: **General**,
 
 - **Language**: Auto (follows your Steam language), English, 简体中文,
   Русский, Español (España), Português (Brasil), Italiano,
-  Español (Latinoamérica), 日本語, Deutsch, Français, Polski, 한국어, 繁體中文 or Türkçe.
+  Español (Latinoamérica), 日本語, Deutsch, Français, Polski, 한국어, 繁體中文,
+  Türkçe, Български, Čeština, Dansk, Nederlands, Suomi, Ελληνικά, Magyar,
+  Bahasa Indonesia, Norsk, Português (Portugal), Română, Svenska or Українська.
 - **Display mode**: Fullscreen or Windowed.
 - **Sound effects** and **Music** volume.
 - **Music order**: play your selected song or shuffle, plus a **Next song**
@@ -32,7 +34,7 @@ keeps your unlocks, perk effects and match rules.
 
 {{shot:error-report-consent}}
 
-## Animation
+## Motion
 
 {{shot:settings-animation}}
 
@@ -44,7 +46,7 @@ keeps your unlocks, perk effects and match rules.
 - **Avatar microphone**: uses your microphone to animate your portrait outside
   voice chat. Off by default, and the audio is never saved.
 
-## Accessibility
+## Access
 
 - **Menu narration**: reads the hovered or focused menu control aloud with the
   Windows voice. Press `F1`
@@ -52,7 +54,17 @@ keeps your unlocks, perk effects and match rules.
 - **Colorblind mode**: swaps to a blue and orange accent palette.
 - **High contrast**: a plain dark background, opaque panels and brighter text
   and controls.
-- **Text size**: Standard or Large.
+- **Text size**: Standard, Large or Extra large. Large lifts small labels and
+  notes to the size of body text; Extra large lifts body text too, sized for
+  a handheld screen such as the Steam Deck's. Screens smaller than
+  1920×1080, such as the Steam Deck's, and larger screens, such as a docked
+  Steam Deck's TV or a desktop monitor, each keep their own size. Until you
+  pick one for a screen, it starts on the recommended size: Extra large on a
+  smaller screen, Standard on a larger one. Docking or undocking a Steam Deck
+  switches the size straight away, even mid-match. The first time you reach
+  the main menu on a screen without a chosen size, the game asks you once,
+  before the error report prompt on first launch, with the recommended size
+  already selected; each size you try redraws the screen at once.
 - **Reduce motion**: calms screen movement and locks the draft reveal to
   Minimal.
 - **Drag targets**: Standard or Large drop zones for placing bones.
@@ -63,7 +75,7 @@ you never need colour alone to tell a Rare card from an Epic one.
 
 {{shot:table-high-contrast}}
 
-## Voice chat
+## Voice
 
 - **Chat volume** for online voice chat.
 - Whether **your microphone** starts live or muted, and whether **your

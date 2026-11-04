@@ -176,8 +176,10 @@ A scoring play gains **+5 points for each copy** when you play on a **vertical
 branch**: the arms that grow up and down from a spinner after its long sides
 are filled.
 
-- Every bone further along an upward or downward arm counts too.
-- Plays on the main left and right line do not qualify.
+- Every bone further along an upward or downward arm counts too, even after
+  the arm bends or the table rearranges its corners.
+- Plays on the main left and right line do not qualify, even where it bends
+  up or down.
 
 ## swap_stock
 

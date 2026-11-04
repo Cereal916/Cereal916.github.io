@@ -46,6 +46,19 @@ The **hammer** decides who plays first.
   next to an open 6 (leaving its 3 open) or an open 3.
 - **Doubles are laid crosswise.** A double can't be played directly against
   another double.
+- **Long lines bend.** A line runs straight until the next bone would run off
+  the table or into the way of another play. That bone then turns the
+  corner toward the more open side of the table, laid across the end of the
+  bone before it, and the line carries on the new way. The table is about
+  six bones to each side of the first bone and two above and below it.
+  Neither a double nor a bone played on one turns a corner: a bone always
+  leaves a double straight, square on the side it was played on. A corner may
+  need the bone you hold turned to fit.
+- **The table keeps room for every play.** Nothing is laid in front of an
+  open end or against a double's open side. When a play would crowd the
+  table, the bone lands where its glowing location showed it and the table
+  then re-turns the corners in the way; every bone keeps its matches and
+  numbers.
 - Pick a bone up and drop it on a glowing location, or select a location with
   the keyboard or controller. Right-click (or `R`) turns a bone you are
   holding by 90 degrees, which you need for some vertical branches.

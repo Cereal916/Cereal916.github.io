@@ -15,7 +15,8 @@ and are gone when it ends.
 Your **Steam display name** labels your seat and appears in tutorial scores,
 cutscene speaker captions, turn and result announcements, and the Ledger.
 Names keep their spelling and case. If Steam cannot supply a name, the game
-shows **Player**. A long name may be shortened with dots to fit its label.
+shows **Player**. A long name may be shortened with dots to fit its label;
+hover it to read the whole name.
 
 {{shot:player-name-table}}
 
