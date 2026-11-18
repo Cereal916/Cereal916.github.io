@@ -140,7 +140,8 @@ the invite through Steam.
 
 The match pauses and waits for them to come back. Each match allows two
 minutes of reconnecting in total; if that runs out, the match ends with no win
-or loss. See {{page:online}}.
+or loss. If they chose to leave the match, it ends straight away instead, also
+with no win or loss. See {{page:online}}.
 
 ## Something went wrong
 

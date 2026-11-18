@@ -29,6 +29,8 @@ for each style, and in Custom mode you can pick Rival's style.
 
 {{rival-styles}}
 
+Nana has her own mid-match remarks when she is your opponent.
+
 ## Rival School
 
 {{shot:rival-school}}

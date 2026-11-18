@@ -72,6 +72,11 @@ required rotation. {{perk:pip_nudge}} keeps its **+1** or **−1** cue.
   **Settings > Access > Edit in Steam**. Remapped buttons show their new
   prompts in the game.
 - Menus, matches and Nana's tutorial all work with a controller.
+- Your controller rumbles on the table's big moments, such as slaps, scores,
+  hand wins and Bone Box openings. Turn it off in **Settings > Motion >
+  Controller rumble**.
+- Moving between buttons and cards plays a quiet tick, with the mouse or a
+  controller. It follows the **Sound effects** volume.
 - Standalone controller hints have dark bordered panels so their symbols and
   labels stay readable over the table artwork.
 - By default, PlayStation **Cross** or Xbox/Steam Deck **A** confirms the

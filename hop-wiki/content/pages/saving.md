@@ -52,7 +52,7 @@ the full game. It does not use Steam Cloud or show the Cloud status button.
 
 
 With Steam Cloud on, your career, unlocks, cosmetics, achievement progress,
-online skill build and saved solo match follow you to other computers and
+online skill build and saved solo match follow you between Windows, macOS and
 Steam Deck. Display, audio and controller settings stay on each device.
 
 - A saved match only travels to another computer after you leave it with
@@ -67,6 +67,8 @@ Steam Deck. Display, audio and controller settings stay on each device.
   Read both cards before you choose.
 - The **Steam Cloud** button in the Settings header shows the current sync
   status.
+
+Until you choose which copy to keep, both saved copies are preserved.
 
 {{shot:cloud-conflict}}
 

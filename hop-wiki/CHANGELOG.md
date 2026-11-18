@@ -6,6 +6,46 @@ the release ships.
 
 ## Unreleased
 
+## 1.0.3
+
+- Online play: when your opponent chooses to leave, the match now ends straight away with no win or loss instead of waiting out the two-minute reconnect allowance (Online page and FAQ).
+
+## 1.0.1
+
+- Describes Nana's shorter fifteen-step lesson: no pip or hammer taps, the spinner rule shown once the long sides are full, a scoring practice where you choose the bone, later score counts you can finish with a click, a forgiving rotation lesson, and Nana explaining the hammer draw and the end of the first hand in her game. Refreshes six tutorial pictures.
+
+- Describes Rival School plays that land and score as in a match, the match-style boneyard draw in Nana's lesson and Rival School's glowing Finish, and refreshes the tutorial and Rival School pictures.
+
+- Refreshes the seven Nana tutorial pictures and the puzzle board picture: the open-ends total box now fits its label and number.
+
+## 1.0.0
+
+- Documents controller rumble, its Motion setting, and the quiet tick when moving between controls, and refreshes the Motion settings picture.
+
+- Documents macOS Steam builds for online play and cross-platform Steam Cloud saves.
+
+- Documents Nana's mid-match remarks and the rewards for verified online comeback wins.
+
+- Clarifies the displayed 50-point minimum for online comebacks and where to read locked cosmetic requirements.
+
+- Refreshes the multiplayer standings screenshot and explains Best score and totals waiting to upload.
+
+- Clarifies career clean hands, empty-rack wins, blocked hands, best hand, abandoned matches, no-draw versus scoring runs, and received versus passed hammer counters.
+
+- Refreshes the Steam Cloud comparison picture and explains preserved copies before a choice, plus the menu’s win–loss record and full captions on hover.
+
+- Refreshes the Rank Up confirmation picture and explains its reset summary, retained progress and failed-save behavior.
+
+- Refreshes menu, career, collection, Settings and online-page pictures for the clearer career header.
+
+- Describes the career header with separate level, balance and XP rows, and full balances on hover.
+
+- Explains Steam overlay recovery and readable Settings notices with larger text.
+
+- Explains how hovering a shortened locked-avatar caption reveals its complete unlock requirement.
+
+- Clarifies the Voice settings preview controls: Sample, Hear my mic and Stop listening, local playback and headphone feedback advice.
+
 - Adds Bulgarian, Czech, Danish, Dutch, Finnish, Greek, Hungarian, Indonesian, Norwegian, Portuguese (Portugal), Romanian, Swedish and Ukrainian to the language settings, with twenty-seven supported languages.
 
 ## 0.25.0-pre.21

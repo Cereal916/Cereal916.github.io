@@ -11,15 +11,20 @@ description: Nana's tutorial, which every new career starts with, and Rival Scho
 
 ## Nana's tutorial
 
-Nana teaches the rules of her house in eighteen short steps:
+Nana teaches the rules of her house in fifteen short steps, and you play
+your first bone on the third:
 
-- the bones, their pips and the hammer
-- leading with a double, laying doubles crosswise and spinners
-- matching an open end and rotating a bone onto a vertical branch
+- the bones and their pips
+- leading with a double when you hold the hammer
 - scoring: after every play, add up the pips on the open ends; a total of
   5, 10, 15, 20 and so on scores that many points
-- counting an open double
-- drawing from the boneyard, blocked hands and winning a hand
+- matching an open end
+- doubles lying crosswise, and spinners, shown once both long sides of the
+  first double are full
+- rotating a bone onto a vertical branch
+- drawing from the boneyard
+- finding a play that scores, and counting an open double
+- ending a hand
 
 ### Good to know
 
@@ -44,11 +49,17 @@ Nana teaches the rules of her house in eighteen short steps:
   total each landing spot would make. Until you have scored three times, a
   bone that would score glows **pink**, and Nana names the best one and its
   points. If nothing glows in the first hand, she reminds you to draw.
+- That game opens with the draw for the hammer, so you learn it by doing it:
+  each of you draws a face-down bone and the highest double takes the hammer.
+- When its first hand ends, Nana says how it ended and what the winner
+  scores: the other hand's pips, rounded up to the next five. If nobody can
+  play, the hand with fewer pips wins.
 - Every step works with the mouse, the keyboard or a controller, and the
   on-screen prompts change to match.
 - In the rotation lesson, select five-six and right-click once. Then click the
   highlighted top end or drag the rotated bone there. Picking up the same held
-  bone again keeps its orientation.
+  bone again keeps its orientation. One turn too many is fine: the bone plays
+  upright either way up.
 - **Continue** and **Finish** glow gold when the lesson is ready for you to
   move on. **Boneyard** uses the same glow when it is time to draw. With
   **Reduce motion** enabled, the glow stays steady.
@@ -56,7 +67,10 @@ Nana teaches the rules of her house in eighteen short steps:
   the lesson, hers and yours, is counted out before its points fly: the pips
   on each open end light up one at a time, the counts line up as a sum such
   as **1 + 5 + 4 = 10**, and the total lights up on a row of multiples of
-  five.
+  five. Nana's first count plays in full; during a later one, a click or
+  **Select** shows the finished sum at once.
+- Drawing from the boneyard looks just as it does in a match: the table beside
+  the face-down bones, then the bone you chose sliding into your hand.
 - The bone you drew stays visible face up beside Nana while she explains why it
   does not match and your turn passes.
 - The bone Nana asks for is highlighted after her explanation. Pick it up to
@@ -64,6 +78,10 @@ Nana teaches the rules of her house in eighteen short steps:
   action as you pick up, rotate and place the bone.
 - Controller focus starts on the requested bone. Back returns it to your rack
   and restores the pickup instruction.
+- In the scoring practice Nana names no bone: every bone that can play glows
+  and the choice is yours. Double-four scores 10, three-four scores 5 and
+  blank-four scores nothing, and Nana tells you how your play added up.
+  **Previous lesson** lets you try another.
 - You can replay it from **Tutorials > Replay Nana** at any time.
 
 {{shot:tutorial-practice}}
@@ -87,7 +105,11 @@ Domino Racer, Pip Shedder and Combo Crafter.
 Each lesson sets up a real table, gives you two playable choices, and explains
 which one the style prefers and why.
 
-- **Show Me** and **Complete Lesson** use the same gold glow when ready.
+- **Show Me**, **Complete Lesson** and the final **Finish** use the same gold
+  glow when ready.
+- The bone you choose flies to the table as in a match. A play that scores is
+  counted the same way too, with any perk bonus flying in from its badge,
+  before the points reach your score.
 - Progress is saved, so you can take the lessons in any order and come back
   later.
 - Finishing all seven earns the **Know Your Rival** achievement.

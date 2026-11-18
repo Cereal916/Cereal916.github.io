@@ -13,6 +13,11 @@ Changes save automatically. Settings has four tabs: **General**,
 
 {{shot:settings-general}}
 
+Use **Steam overlay** to open Steam while playing. If it cannot open, the
+notice beside Settings explains what to check and keeps its full heading
+above the instructions at larger text sizes. Check both Steam's **In Game**
+setting and this game's **Properties**, then restart the game.
+
 ## General
 
 - **Language**: Auto (follows your Steam language), English, 简体中文,
@@ -45,6 +50,10 @@ keeps your unlocks, perk effects and match rules.
 - **Animation speed**: Cinematic, Quick or Instant.
 - **Avatar microphone**: uses your microphone to animate your portrait outside
   voice chat. Off by default, and the audio is never saved.
+- **Controller rumble**: on by default. The controller you are playing with
+  rumbles when bones slap down, points score, hands are won and Bone Boxes
+  open. Turning it on gives one short pulse so you can feel it. It works even
+  with sound effects muted, and only the controller in use rumbles.
 
 ## Access
 
@@ -82,7 +91,11 @@ you never need colour alone to tell a Rare card from an Epic one.
   opponent's voice** starts heard or muted, at the start of each match.
 - **Silence muted voices**.
 - **Voice style**: Natural, Table radio, House phone, Gramophone or Arcade
-  cabinet. Use **Sample** and **Hear my mic** to try them.
+  cabinet. **Sample** plays a synthetic voice. **Hear my mic** lets you
+  hear your selected microphone through the style while you talk; select
+  **Stop listening** to end the test. Both previews play only on your
+  device and send nothing to other players. Use headphones to avoid
+  feedback.
 - **Speaker** and **Microphone** device pickers.
 
 ## During a match

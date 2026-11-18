@@ -87,6 +87,10 @@ them from **Cosmetics** on the main menu.
 
 Your portrait represents you. Dialogue uses your current Steam profile name.
 
+Locked creature portraits show their unlock route and required rank/level,
+finished-match count or puzzle set. If a caption is shortened with dots,
+hover the card to read the complete unlock requirement.
+
 The twenty human portraits are available from the start. Resting smiles keep
 their eyes open between brief blinks, and the smile or speaking mouth stays
 in place while the eyes blink. Portraits use crisp pixel art with clean,

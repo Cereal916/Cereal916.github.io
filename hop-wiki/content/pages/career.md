@@ -10,6 +10,27 @@ description: How House of Pips career progression works: XP and levels, skill po
 Your **career** is everything that lasts between matches: your level, skills,
 Bone Bucks, unlocked perks, supplies, cosmetics and records. The panel at the
 top-left of most screens shows your rank, level, XP bar and Bone Bucks.
+The level and Bone Bucks share the first row, with XP and its progress bar
+on the wider row below. If a long balance ends in dots, hover over it
+to read the full amount.
+
+The win–loss strip below the career panel shows your solo record beside the
+online matches reported by this account. A dash means no online record is
+available. Hover over the strip to read its full captions and explanation.
+
+## Reading your career statistics
+
+**Dominoes** counts hands you won by playing your last tile. **Blocks** counts
+blocked hands, whoever won. **Clean** counts hands you won without drawing
+from the boneyard; the rival drawing does not spoil your count. **Best hand**
+is your highest end-of-hand point award. **Unfinished** counts matches you
+abandoned, even though it appears in the Hands group.
+
+The career’s **Longest run** counts consecutive placements without drawing.
+The match story’s **Longest scoring run** counts consecutive placements that
+score points instead. For hammer statistics, **kept/traded** records opening
+rights you retained or gave away; **starts/gifts** records hands you started
+with the hammer and hammers you received from the rival.
 
 ## XP and levels
 
@@ -126,6 +147,10 @@ still appearing, the first press reveals the complete line; the next advances
 it. After the last line, the scene finishes and returns to the menu. History's Cutscenes view can replay each rank's scene.
 
 {{shot:prestige-ready}}
+
+Before you confirm, the dialog lists what resets, the permanent progress you
+keep, and the skill-point, XP and Bone Bucks bonuses for the next rank. If
+the rank up cannot be saved, your career stays unchanged and you can try again.
 
 {{shot:prestige-confirm}}
 

@@ -15,7 +15,7 @@ Your own volume and mute settings stay your own.
 
 ## What you need
 
-- Steam running, on a Windows PC or a Steam Deck.
+- Steam running on Windows, macOS or Steam Deck. On a Mac, launch the game from your Steam Library.
 - Nana's tutorial completed, like every other mode.
 - Both players on the **same version** of the game, or you won't see each
   other's lobbies.
@@ -147,7 +147,10 @@ The portrait mute buttons sit clear of **Play again**, **Return to setup** and
   reconnecting in total, shared across every drop. The screen counts it down.
 - If that allowance runs out, the match ends with no win or loss recorded.
 - **Surrender** concedes the match: it counts as a loss.
-- **Leave match** interrupts it without a win or loss.
+- **Leave match** interrupts it without a win or loss. Your opponent's match
+  ends at once instead of waiting for you to reconnect.
+- If your opponent leaves, your match ends straight away with no win or loss
+  recorded.
 - **Rage quit** in Settings concedes the match.
 
 ## Rank, level and rewards
@@ -168,6 +171,14 @@ finished matches.
 - Rewards unlocked by online rank and level are **cosmetic only**: tile backs,
   edge finishes, placement effects and badges such as First Table, Ten Wins
   and Comeback.
+- A comeback counts when you win an online match after trailing by at least
+  {{n:online.comeback.minimumDeficit}} points. The Comebacks total appears
+  on your online profile. Comeback wins unlock **{{n:online.comeback.badge.name}}**
+  at {{n:online.comeback.badge.wins}}, **{{n:online.comeback.haunt.name}}**
+  at {{n:online.comeback.haunt.wins}}, and **{{n:online.comeback.heartbeat.name}}**
+  at {{n:online.comeback.heartbeat.wins}}.
+- In Cosmetics, scroll Edge finishes and Placement effects to see the
+  requirements and progress for locked rewards.
 - Finishing an online match earns the **Across the Table** achievement.
 
 ## Standings and history
@@ -177,6 +188,7 @@ finished matches.
 - **Leaderboards** rank players by wins in three groups: public presets,
   private presets and Custom matches. View them worldwide, around your own
   position, or among your friends.
+- **Best score** is your highest score in a finished match in that group. Your saved totals can include results that have not reached Steam yet.
 - **History** lists every opponent you've finished a match against.
 - You can **block** a player from the lobby or your history. Blocked players
   never appear in your searches and can't invite you.
